@@ -1,0 +1,199 @@
+{
+"Developer":[
+{
+ "PackageName":"Anaconda",
+ "PackageBashCommands":["mkdir anaconda","cd anaconda","wget https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh","sh Anaconda3-4.3.1-Linux-x86_64.sh","sudo conda update conda","cd .."]
+},
+{
+ "PackageName":"Android Studio",
+ "PackageBashCommands":["mkdir android-studio","cd android-studio","wget https://dl.google.com/dl/android/studio/ide-zips/2.3.2.0/android-studio-ide-162.3934792-linux.zip","unzip android-studio-ide-162.3934792-linux.zip","sudo chown -R root:root android-studio","sudo mv android-studio /opt","LC_ALL=C sh /opt/android-studio/bin/studio.sh","cd ~/$ANDROID_HOME/Android/Sdk/emulator/lib64/libstdc++","mv libstdc++.so.6 libstdc++.so.6.bak","cd .."]
+},
+{
+ "PackageName":"Ardiuno Ide",
+ "PackageBashCommands":["mkdir arduino","cd arduino","wget http://mirror.f4st.host/archlinux/community/os/x86_64/arduino-1:1.8.2-1-x86_64.pkg.tar.xz","sh Anaconda3-4.3.1-Linux-x86_64.sh","sudo pacman -U arduino-1_1.8.2-1-x86_64.pkg.tar.xz","cd .."]
+}
+,
+{
+ "PackageName":"Atom Text Editor",
+ "PackageBashCommands":["mkdir atom","cd atom","cd arduino","wget http://mirror.f4st.host/archlinux/community/os/x86_64/atom-1.17.0-1-x86_64.pkg.tar.xz","sudo pacman -U atom-1.17.0-1-x86_64.pkg.tar.xz","cd .."]
+}
+,
+{
+ "PackageName":"Eclipse",
+ "PackageBashCommands":["mkdir eclipse","cd eclipse","wget http://mirror.f4st.host/archlinux/extra/os/x86_64/eclipse-java-4.6.3-1-x86_64.pkg.tar.xz","sudo pacman -U eclipse-java-4.6.3-1-x86_64.pkg.tar.xz","cd .."]
+}
+,
+{
+ "PackageName":"Git",
+ "PackageBashCommands":"sudo pacman -S git"
+ },
+ {
+ "PackageName":"intellij Idea",
+ "PackageBashCommands":["mkdir intellijidea","cd intellijidea","wget http://mirror.f4st.host/archlinux/community/os/i686/intellij-idea-community-edition-2:2017.1.2-1-any.pkg.tar.xz","sudo pacman -U intellij-idea-community-edition-2_2017.1.2-1-any.pkg.tar.xz.part","cd .."]
+}
+,
+ {
+ "PackageName":"Mono Develop",
+ "PackageBashCommands":["mkdir monodevelop","cd monodevelop","wget http://mirror.f4st.host/archlinux/extra/os/x86_64/mono-5.0.0.100-1-x86_64.pkg.tar.xz","sudo pacman -U mono-5.0.0.100-1-x86_64.pkg.tar.xz","cd .."]
+}
+,
+ {
+ "PackageName":"NetBeans",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/netbeans-javase.tar.gz","tar -xvzf netbeans-javase.tar.gz","cd netbeans-javase","makepkg -s","sudo pacman -U netbeans-javase-8.2-1-any.pkg.tar.xz","cd .."]
+},
+ {
+ "PackageName":"PhpStorm",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/phpstorm.tar.gz","tar -xzvf phpstorm.tar.gz","cd phpstorm","makepkg -s","sudo pacman -U phpstorm-2017.1.4-1-x86_64.pkg.tar.xz","cd .."]
+},
+ {
+ "PackageName":"PyCharm",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/pycharm-community.tar.gz","tar -xvzf pycharm-community.tar.gz","cd pycharm-community","makepkg -s","sudo pacman -U pycharm-community-2017.1.2-1-any.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Sublime Text",
+ "PackageBashCommands":"yaourt -S sublime-text"
+},
+{
+ "PackageName":"Vim",
+ "PackageBashCommands":"sudo pacman -S vim"
+},
+{
+ "PackageName":"Visual Studio Code",
+ "PackageBashCommands":"yaourt -S visual-studio-code"
+}
+
+],
+
+
+"Tools":[
+{
+ "PackageName":"BleachBit",
+ "PackageBashCommands":"sudo pacman -S bleachbit"
+},
+{
+ "PackageName":"Chrome",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/google-chrome.tar.gz","tar -xvzf google-chrome.tar.gz","cd google-chrome","makepkg -s","sudo pacman -U google-chrome-58.0.3029.110-1-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Conky & Conky Manager",
+ "PackageBashCommands":["sudo pacman -S conky","sudo pacman -S conky-manager"]
+},
+{
+ "PackageName":"Krita",
+ "PackageBashCommands":["mkdir krita","cd krita","wget http://mirror.f4st.host/archlinux/staging/os/x86_64/krita-3.1.3-2-x86_64.pkg.tar.xz","sudo pacman -U krita-3.1.3-2-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"MegaSync",
+ "PackageBashCommands":"yaourt -S megasync"
+},
+{
+ "PackageName":"MintStick",
+ "PackageBashCommands":"yaourt mintstick-git"
+},
+{
+ "PackageName":"NylasMail",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/nylas-mail-bin.tar.gz","tar -xvzf nylas-mail-bin.tar.gz","cd nylas-mail-bin","makepkg -s","sudo pacman -U nylas-mail-bin-2.0.32-1-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Opera",
+ "PackageBashCommands":["mkdir opera","cd opera","wget http://mirror.f4st.host/archlinux/community/os/x86_64/opera-45.0.2552.812-1-x86_64.pkg.tar.xz","sudo pacman -U opera-45.0.2552.812-1-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Pepper Flash",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/pepper-flash.tar.gz","tar -xzvf pepper-flash.tar.gz","cd pepper-flash","makepkg -s","sudo pacman -U pepper-flash-25.0.0.171-1-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Plank",
+ "PackageBashCommands":"sudo pacman -S plank"
+},
+{
+ "PackageName":"PlayOnLinux",
+ "PackageBashCommands":["mkdir playonlinux","wget http://mirror.f4st.host/archlinux/community/os/i686/playonlinux-4.2.10-1-any.pkg.tar.xz","sudo pacman -U playonlinux-4.2.10-1-any.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"RedShift",
+ "PackageBashCommands":["mkdir redshift","cd redshift","wget http://mirror.f4st.host/archlinux/community/os/x86_64/redshift-1.11-4-x86_64.pkg.tar.xz","sudo pacman -U redshift-1.11-4-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Skype",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/skypeforlinux.tar.gz","tar -xvzf skypeforlinux.tar.gz","cd skypeforlinux","makepkg -s","sudo pacman -U skypeforlinux-5.1.0.1-1-x86_64.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"TeamViewer",
+ "PackageBashCommands":"yaourt -S teamviewer"
+},
+{
+ "PackageName":"Terminatör",
+ "PackageBashCommands":"yaourt -S terminatör"
+},
+{
+ "PackageName":"Ulauncher",
+ "PackageBashCommands":"yaourt -S ulauncher"
+},
+{
+ "PackageName":"VirtualBox",
+ "PackageBashCommands":"yaourt -S virtualbox"
+},
+{
+ "PackageName":"VokoScreen",
+ "PackageBashCommands":"yaourt -S vokoscreen"
+},
+{
+ "PackageName":"Whatsapp Desktop",
+ "PackageBashCommands":"yaourt -S whatsapp-desktop"
+},
+{
+ "PackageName":"Wine",
+ "PackageBashCommands":"sudo pacman -S wine"
+},
+{
+ "PackageName":"WinUsb",
+ "PackageBashCommands":"yaourt -S winusb"
+}
+],
+
+"Personal":[
+
+{
+ "PackageName":"Numix Circle Theme",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/numix-circle-icon-theme-git.tar.gz","tar -xvzf numix-circle-icon-theme-git.tar.gz","cd numix-circle-icon-theme-git","makepkg -s ","sudo pacman -U numix-circle-icon-theme-git-0.r16.5a11140-1-any.pkg.tar.xz","cd .."]
+},
+{
+ "PackageName":"Spotify",
+ "PackageBashCommands":["sudo -Rsnc spotify","sudo -Syyuu","sudo pacman -Scc","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify"]
+}
+
+
+],
+
+"System":[
+{
+ "PackageName":"Update Grub",
+ "PackageBashCommands":"sudo update-grub"
+},
+
+{
+ "PackageName":"Preload",
+ "PackageBashCommands":["sudo pacman -S preload","sudo systemctl enable preload.service"]
+},
+{
+ "PackageName":"SSD Trim",
+ "PackageBashCommands":"sudo systemctl enable fstrim.timer"
+}
+
+
+],
+
+"Version":"1.0.1",
+"GithubRepo":"http://www.github.com/hsmnzaydn/AfterManjaro"
+
+
+
+
+
+
+
+
+
+
+}
