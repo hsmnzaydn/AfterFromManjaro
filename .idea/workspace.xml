@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe640a8a-c094-472a-a4f6-35eddeacf43a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BashCommands.py" afterPath="$PROJECT_DIR$/BashCommands.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Update.py" afterPath="$PROJECT_DIR$/Update.py" />
     </list>
+    <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="BashCommands.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BashCommands.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,8 +170,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/workspace.xml" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JSON" />
   </component>
   <component name="RecentsManager">
@@ -510,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495946400134</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change BashCommands and Update">
+      <created>1495946717985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495946717985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -549,7 +555,8 @@
     <MESSAGE value="Change Gui and add news features" />
     <MESSAGE value="Packages.json added to github" />
     <MESSAGE value="add sudo pacman -S git to Update.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sudo pacman -S git to Update.py" />
+    <MESSAGE value="Change BashCommands and Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change BashCommands and Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,8 +959,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BashCommands.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
