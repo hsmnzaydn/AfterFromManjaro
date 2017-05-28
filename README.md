@@ -1,9 +1,11 @@
-Sizin seçtiğiniz paket ve programları otomatik indirir ve yükler
-Kullanım Şekli
-Terminali açın ve "python AfterManjaro.py" yazın
+Automatically download and load your selected packages and programs
+<br />
+<h1>Usage</h1>
+<br />
+Open the terminal and type "python AfterManjaro.py".
 
-
-İçindekiler
+<br />
+<h2>Index</h2>
 Android Studio
 PyCharm
 Anaconda
@@ -13,6 +15,7 @@ Eclipse
 Vim
 Git
 Filezilla
+FoxitReader
 Ardiuno Ide
 Mono Develop
 Intellij IDEA
