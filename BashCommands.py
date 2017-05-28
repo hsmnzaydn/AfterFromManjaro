@@ -21,8 +21,3 @@ def EchoMulti(Commands):
 
 def EchoSingle(Commands):
     os.system("echo "+Commands+">install.sh")
-
-
-
-
-EchoSingle("sudo pacman -S wget")
