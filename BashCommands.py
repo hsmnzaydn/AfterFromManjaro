@@ -4,6 +4,7 @@ def Wget(url):
     os.system("wget "+url)
 
 def RunSh(fileDirectory):
+
     os.system("sh "+fileDirectory)
 
 def RunCommands(Commands):

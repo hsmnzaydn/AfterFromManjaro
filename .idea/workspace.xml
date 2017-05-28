@@ -1,67 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe640a8a-c094-472a-a4f6-35eddeacf43a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PackagesList.ods" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/update.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/AfterManjaroo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BashCommands.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JsonParse.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Packages.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Update.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.ui" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/install.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Anaconda.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/AndroidStudio.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/ArdiunoIde.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/AtomTextEditor.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/BleachBit.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Chrome.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Conky.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Eclipse.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Filezilla.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Git.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/GrubGüncellemesi.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/IntellijIdea.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Krita.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/LAMP(LinuxApacheMysqlPhp).sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Mega.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Mintstick.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/MonoDevelop.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/MysqlWorkbench.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/NetBeans.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/NumixCircleTheme.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/NylasMail.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Opera.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/PepperFlash.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/PhpStorm.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Plank.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/PlayOnLinux.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Preload.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Pycharm.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/RedShift.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/SSDTrim.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Skype.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Spotify.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/SublimeText.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/TeamViewer.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Terminatör.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Ulauncher.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Vim.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/VirtualBox.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/VisualStudioCode.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/VokoScreen.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/WhatsappDesktop.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/WinUsb.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/Wine.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sh/baslangic.sh" afterPath="" />
+    <list default="true" id="fe640a8a-c094-472a-a4f6-35eddeacf43a" name="Default" comment="Change Gui and add news features">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AfterManjaro.py" afterPath="$PROJECT_DIR$/AfterManjaro.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BashCommands.py" afterPath="$PROJECT_DIR$/BashCommands.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JsonParse.py" afterPath="$PROJECT_DIR$/JsonParse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages.json" afterPath="$PROJECT_DIR$/Packages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Update.py" afterPath="$PROJECT_DIR$/Update.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install.sh" afterPath="$PROJECT_DIR$/install.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,8 +30,8 @@
       <file leaf-file-name="AfterManjaro.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AfterManjaro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="333" column="21" lean-forward="false" selection-start-line="333" selection-start-column="21" selection-end-line="333" selection-end-column="21" />
+            <state relative-caret-position="292">
+              <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
               <folding>
                 <element signature="e#193#235#0" expanded="true" />
               </folding>
@@ -92,11 +39,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BashCommands.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BashCommands.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonParse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JsonParse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Packages.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Packages.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/update.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Update.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,11 +127,12 @@
         <option value="$PROJECT_DIR$/dd.py" />
         <option value="$PROJECT_DIR$/de.ipynb" />
         <option value="$PROJECT_DIR$/Package.py" />
-        <option value="$PROJECT_DIR$/Packages.json" />
-        <option value="$PROJECT_DIR$/JsonParse.py" />
-        <option value="$PROJECT_DIR$/BashCommands.py" />
-        <option value="$PROJECT_DIR$/AfterManjaro.py" />
         <option value="$PROJECT_DIR$/Update.py" />
+        <option value="$PROJECT_DIR$/AfterManjaro.py" />
+        <option value="$PROJECT_DIR$/BashCommands.py" />
+        <option value="$PROJECT_DIR$/install.sh" />
+        <option value="$PROJECT_DIR$/JsonParse.py" />
+        <option value="$PROJECT_DIR$/Packages.json" />
       </list>
     </option>
   </component>
@@ -168,27 +163,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AfterManjaroo" />
+              <option name="myItemId" value="AfterFromManjaro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AfterManjaroo" />
+              <option name="myItemId" value="AfterFromManjaro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sesilekontrol" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="DockerRegistry" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JSON" />
   </component>
@@ -499,6 +494,14 @@
       <option name="presentableId" value="Default" />
       <updated>1495583070523</updated>
     </task>
+    <task id="LOCAL-00001" summary="Change Gui and add news features">
+      <created>1495938852277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495938852277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -509,7 +512,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -533,6 +536,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change Gui and add news features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Gui and add news features" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -547,6 +554,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AfterManjaro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5661">
+          <caret line="333" column="21" lean-forward="false" selection-start-line="333" selection-start-column="21" selection-end-line="333" selection-end-column="21" />
+          <folding>
+            <element signature="e#193#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AfterManjaro.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5695">
@@ -866,36 +891,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/de.ipynb" />
-    <entry file="file://$PROJECT_DIR$/install.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Package.py" />
     <entry file="file://$PROJECT_DIR$/aa.py" />
-    <entry file="file://$PROJECT_DIR$/Packages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="186" column="18" lean-forward="false" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JsonParse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AfterManjaro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="333" column="21" lean-forward="false" selection-start-line="333" selection-start-column="21" selection-end-line="333" selection-end-column="21" />
+        <state relative-caret-position="292">
+          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
           <folding>
             <element signature="e#193#235#0" expanded="true" />
           </folding>
@@ -904,16 +905,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BashCommands.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JsonParse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Packages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

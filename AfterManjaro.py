@@ -332,6 +332,7 @@ class Ui_MainWindow(object):
 
 
     def update(self):
+
         Update.Update()
 
 
