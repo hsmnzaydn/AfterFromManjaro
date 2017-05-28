@@ -1,1 +1,1 @@
-sudo pacman -S wget
+yaourt -S filezilla

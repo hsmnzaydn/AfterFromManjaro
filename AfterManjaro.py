@@ -242,8 +242,8 @@ class Ui_MainWindow(object):
         Tool_list = JsonParse.getPackageName("Tools")
         Personal_list = JsonParse.getPackageName("Personal")
         System_list = JsonParse.getPackageName("System")
-
-        self.Version_label.setText("1.0.0")
+        Version_no="1.0.0"
+        self.Version_label.setText(Version_no)
 
         self.GithubRepo_label.setText(JsonParse.getGithubRepo())
         self.CurrentVersion_label.setText(JsonParse.getVersion())
@@ -257,7 +257,7 @@ class Ui_MainWindow(object):
         for Package_System in System_list:
             self.System_listWidget.addItem(Package_System)
 
-        if self.Version_label!=self.CurrentVersion_label:
+        if Version_no != JsonParse.getVersion():
             self.Update_button.setEnabled(True)
 
         self.Install_Button.clicked.connect(self.install)
