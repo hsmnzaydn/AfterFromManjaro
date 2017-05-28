@@ -78,6 +78,14 @@
  "PackageName":"Conky & Conky Manager",
  "PackageBashCommands":["sudo pacman -S conky","sudo pacman -S conky-manager"]
 },
+ {
+ "PackageName":"Filezilla",
+ "PackageBashCommands":"yaourt -S filezilla"
+},
+ {
+ "PackageName":"FoxitReader",
+ "PackageBashCommands":"yaourt -S foxitreader"
+},
 {
  "PackageName":"Krita",
  "PackageBashCommands":["mkdir krita","cd krita","wget http://mirror.f4st.host/archlinux/staging/os/x86_64/krita-3.1.3-2-x86_64.pkg.tar.xz","sudo pacman -U krita-3.1.3-2-x86_64.pkg.tar.xz","cd .."]
