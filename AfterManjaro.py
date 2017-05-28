@@ -238,16 +238,21 @@ class Ui_MainWindow(object):
         global Developer_list, Tool_list, Personal_list
         global System_list
 
+
         Developer_list = JsonParse.getPackageName("Developer")
         Tool_list = JsonParse.getPackageName("Tools")
         Personal_list = JsonParse.getPackageName("Personal")
         System_list = JsonParse.getPackageName("System")
+
+
         Version_no="1.0.0"
         self.Version_label.setText(Version_no)
+
 
         self.GithubRepo_label.setText(JsonParse.getGithubRepo())
         self.CurrentVersion_label.setText(JsonParse.getVersion())
 
+        #Adds incoming package names to the list
         for Package_Developer in Developer_list:
             self.Developer_listWidget.addItem(Package_Developer)
         for Package_Tools in Tool_list:
@@ -257,9 +262,11 @@ class Ui_MainWindow(object):
         for Package_System in System_list:
             self.System_listWidget.addItem(Package_System)
 
+        #If the version number does not match the version number in the repository, the update button opens.
         if Version_no != JsonParse.getVersion():
             self.Update_button.setEnabled(True)
 
+        #to install and update functions
         self.Install_Button.clicked.connect(self.install)
         self.Update_button.clicked.connect(self.update)
 
@@ -284,6 +291,7 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Github Repo:"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Others"))
 
+    #Get name of choosed package
     def getItems(self):
         selected_package_Developer = ""
         items = self.Developer_listWidget.selectedItems()
@@ -326,11 +334,12 @@ class Ui_MainWindow(object):
         for install in selected_install_System:
             JsonParse.getPackageBashCommands("System", install)
 
+    #When clicked install button
     def install(self):
         BashCommands.StartRun()
         self.getItems()
 
-
+    #When clicked update button
     def update(self):
 
         Update.Update()
