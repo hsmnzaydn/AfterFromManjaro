@@ -6,45 +6,87 @@ Open the terminal and type "python AfterManjaro.py".
 
 <br />
 <h2>Index</h2>
-Android Studio
-PyCharm
-Anaconda
-Sublime Text
-Atom Text Editor
-Eclipse
-Vim
-Git
-Filezilla
-FoxitReader
-Ardiuno Ide
-Mono Develop
-Intellij IDEA
-Visual Studio Code
-NetBeans
-Mysql Workbench
-Ulauncher
-Opera
-Pepper Flash
-Conky
-Whatsapp Desktop
-TeamViewer
-Skype
-Mega
-BleachBit
-Mintstick
-VirtualBox
-Plank
-Krita
-RedShift
-VokoScreen
-WinUsb
-Wine
-PlayOnLinux
-Nylas Mail
-Chrome
-Terminatör
-Spotify
-Numix Circle Theme
-Grub Güncellemesi
-SSD Trim
-Preload
+<br />
+Android Studio(All distro)
+<br />
+PyCharm(AUR)
+<br />
+Anaconda(All distro)
+<br />
+Sublime Text(AUR)
+<br />
+Atom Text Editor(AUR)
+<br />
+Eclipse(AUR)
+<br />
+Vim(AUR)
+<br />
+Git(AUR)
+<br />
+Filezilla(AUR)
+<br />
+FoxitReader(AUR)
+<br />
+Ardiuno Ide(AUR)
+<br />
+Mono Develop(AUR)
+<br />
+Intellij IDEA(AUR)
+<br />
+Visual Studio Code(AUR)
+<br />
+NetBeans(AUR)
+<br />
+Mysql Workbench(AUR)
+<br />
+Ulauncher(AUR)
+<br />
+Opera(AUR)
+<br />
+Pepper Flash(AUR)
+<br />
+Conky(AUR)
+<br />
+Whatsapp Desktop(AUR)
+<br />
+TeamViewer(AUR)
+<br />
+Skype(AUR)
+<br />
+Mega(AUR)
+<br />
+BleachBit(AUR)
+<br />
+Mintstick(AUR)
+<br />
+VirtualBox(AUR)
+<br />
+Plank(AUR)
+<br />
+Krita(AUR)
+<br />
+RedShift(AUR)
+<br />
+VokoScreen(AUR)
+<br />
+WinUsb(AUR)
+<br />
+Wine(AUR)
+<br />
+PlayOnLinux(AUR)
+<br />
+Nylas Mail(AUR)
+<br />
+Chrome(AUR)
+<br />
+Terminatör(AUR)
+<br />
+Spotify(AUR)
+<br />
+Numix Circle Theme(AUR)
+<br />
+Update Grub(AUR)
+<br />
+SSD Trim(AUR)
+<br />
+Preload(AUR)
