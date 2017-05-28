@@ -1,2 +1,1 @@
 sudo pacman -S wget
-

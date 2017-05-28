@@ -1,7 +1,7 @@
 import urllib.request, json
 import BashCommands
 
-with urllib.request.urlopen("http://serkanozaydin.net/sh/Packages.json") as url:
+with urllib.request.urlopen("https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/master/Packages.json") as url:
     data = json.loads(url.read().decode())
 def getPackageName(Type):
     Packages=[]
