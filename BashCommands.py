@@ -17,7 +17,7 @@ def RunCommands(Commands):
 
 #Run when installing a package
 def StartRun():
-    Commands=["sudo pacman -S wget","sudo pacman -S yaourt","sudo pacman-mirrors -g","sudo pacman -Syy"]
+    Commands=["sudo pacman -S wget","sudo pacman -S base-devel","sudo pacman -S yaourt","sudo pacman-mirrors -g","sudo pacman -Syy"]
     RunCommands(Commands)
 
 #You can edit the install.sh with this functions
