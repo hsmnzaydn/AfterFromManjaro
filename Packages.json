@@ -18,6 +18,11 @@
  "PackageBashCommands":["mkdir atom","cd atom","cd arduino","wget http://mirror.f4st.host/archlinux/community/os/x86_64/atom-1.17.0-1-x86_64.pkg.tar.xz","sudo pacman -U atom-1.17.0-1-x86_64.pkg.tar.xz","cd .."]
 }
 ,
+ {
+ "PackageName":"Geany",
+ "PackageBashCommands":"yaourt -S geany"
+}
+,
 {
  "PackageName":"Eclipse",
  "PackageBashCommands":["mkdir eclipse","cd eclipse","wget http://mirror.f4st.host/archlinux/extra/os/x86_64/eclipse-java-4.6.3-1-x86_64.pkg.tar.xz","sudo pacman -U eclipse-java-4.6.3-1-x86_64.pkg.tar.xz","cd .."]
