@@ -168,7 +168,7 @@
 
 "Personal":[
  {
- "PackageName":"Flatter Icon",
+ "PackageName":"Flatter Icons",
  "PackageBashCommands":"yaourt -S flattr-icon-theme"
 },
  {
@@ -181,7 +181,7 @@
 },
 
 {
- "PackageName":"Paper Icon",
+ "PackageName":"Paper Icons",
  "PackageBashCommands":"yaourt -S paper-icon-theme-git￼"
 },
 {
