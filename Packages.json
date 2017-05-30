@@ -168,6 +168,10 @@
 
 "Personal":[
  {
+ "PackageName":"Compiz",
+ "PackageBashCommands":"yaourt -S compiz"
+},
+ {
  "PackageName":"Flatter Icons",
  "PackageBashCommands":"yaourt -S flattr-icon-theme"
 },
