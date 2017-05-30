@@ -85,16 +85,18 @@ Terminatör(AUR)
 <br />
 Spotify(AUR)
 <br />
-Flatter
+Flatter(AUR)
 <br />
 Numix Circle Theme(AUR)
 <br />
-Numix Square Icons
+Numix Square Icons(AUR)
 <br />
-Paper Icons
+Paper Icons(AUR)
 <br />
 Update Grub(AUR)
 <br />
 SSD Trim(AUR)
 <br />
 Preload(AUR)
+<br />
+Compiz(AUR)
