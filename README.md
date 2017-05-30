@@ -21,6 +21,8 @@ Eclipse(AUR)
 <br />
 Vim(AUR)
 <br />
+Geany
+<br />
 Git(AUR)
 <br />
 Filezilla(AUR)
@@ -83,7 +85,13 @@ Terminatör(AUR)
 <br />
 Spotify(AUR)
 <br />
+Flatter
+<br />
 Numix Circle Theme(AUR)
+<br />
+Numix Square Icons
+<br />
+Paper Icons
 <br />
 Update Grub(AUR)
 <br />
