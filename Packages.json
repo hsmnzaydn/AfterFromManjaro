@@ -141,8 +141,8 @@
  "PackageBashCommands":"yaourt -S teamviewer"
 },
 {
- "PackageName":"Terminatör",
- "PackageBashCommands":"yaourt -S terminatör"
+ "PackageName":"Terminator",
+ "PackageBashCommands":"yaourt -S terminator"
 },
 {
  "PackageName":"Ulauncher",
