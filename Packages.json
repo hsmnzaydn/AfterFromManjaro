@@ -78,7 +78,7 @@
 },
 {
  "PackageName":"Chrome",
- "PackageBashCommands":["yaourt -S google-chrome"]
+ "PackageBashCommands":"yaourt -S google-chrome"
 },
 {
  "PackageName":"Conky & Conky Manager",
