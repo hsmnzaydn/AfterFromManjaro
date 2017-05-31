@@ -85,6 +85,10 @@
  "PackageBashCommands":["sudo pacman -S conky","sudo pacman -S conky-manager"]
 },
  {
+ "PackageName":"Dropbox",
+ "PackageBashCommands":"yaourt -S dropbox"
+},
+ {
  "PackageName":"Filezilla",
  "PackageBashCommands":"yaourt -S filezilla"
 },
@@ -147,6 +151,10 @@
 {
  "PackageName":"VirtualBox",
  "PackageBashCommands":"yaourt -S virtualbox"
+},
+ {
+ "PackageName":"VLC",
+ "PackageBashCommands":"yaourt -S vlc"
 },
 {
  "PackageName":"VokoScreen",
