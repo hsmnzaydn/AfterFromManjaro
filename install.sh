@@ -1,1 +1,1 @@
-yaourt -S filezilla
+sudo pacman -S vim
