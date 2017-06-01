@@ -20,12 +20,14 @@ def RunSh(fileDirectory):
 #Run bash commands
 def RunCommands(Commands):
     for Command in Commands:
-        subprocess.call(['gksudo',Command])
+        os.system(Command)
 
 #Run when installing a package
 def StartRun():
-    Commands=["sudo pacman -S wget --noconfirm","sudo pacman -S base-devel --noconfirm","sudo pacman -S yaourt --noconfirm","sudo pacman-mirrors -g","sudo pacman -Syy --noconfirm"]
+    Commands = ["sudo pacman -S wget --noconfirm", "sudo pacman -S base-devel --noconfirm",
+                "sudo pacman -S yaourt --noconfirm", "sudo pacman-mirrors -g", "sudo pacman -Syy --noconfirm"]
     RunCommands(Commands)
+
 
 #You can edit the install.sh with this functions
 def EchoMulti(Commands):
