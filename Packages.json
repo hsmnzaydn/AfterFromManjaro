@@ -99,6 +99,7 @@
 {
  "PackageName":"Krita",
  "PackageBashCommands":"yaourt -S krita --noconfirm"
+},
 {
  "PackageName":"MegaSync",
  "PackageBashCommands":"yaourt -S megasync --noconfirm"
