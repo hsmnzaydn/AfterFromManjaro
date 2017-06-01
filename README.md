@@ -2,7 +2,7 @@ Automatically download and load your selected packages and programs
 <br />
 <h1>Usage</h1>
 <br />
-Double click to AfterManjaro.py
+Double click to AfterManjaro.desktop
 <br />
 or
 <br />
