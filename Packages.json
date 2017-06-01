@@ -26,7 +26,7 @@
 ,
  {
  "PackageName":"Geany",
- "PackageBashCommands":"yaourt -S geany"
+ "PackageBashCommands":"yaourt -S geany --noconfirm"
 }
 ,
 {
