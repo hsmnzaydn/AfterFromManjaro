@@ -1,1 +1,1 @@
-yaourt -S geany --noconfirm
+yaourt -S visual-studio-code --noconfirm
