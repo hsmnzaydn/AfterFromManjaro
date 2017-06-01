@@ -268,6 +268,12 @@ class Ui_MainWindow(object):
 
     def update(self):
         Update.Update()
+        infoBox = QMessageBox()
+        infoBox.setIcon(QMessageBox.Information)
+        infoBox.setText("Updated")
+        infoBox.setWindowTitle("Information")
+        infoBox.setStandardButtons(QMessageBox.Ok)
+        infoBox.exec_()
 
     def about(self):
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', new=2)
