@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=After Manjaro
+Exec=gksu python ./AfterManjaro.py
+Icon=./icon.png
+Type=Application

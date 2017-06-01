@@ -1,4 +1,11 @@
 import os
+import subprocess
+
+
+def RemoveFile(File):
+    os.remove(File)
+def RunSingleCommand(Command):
+    os.system(Command)
 
 #This file is used in the script to use bash commands
 #Bu dosya programda bash komutlarını kullanmak için kullanılıyor
@@ -13,11 +20,11 @@ def RunSh(fileDirectory):
 #Run bash commands
 def RunCommands(Commands):
     for Command in Commands:
-        os.system(Command)
+        subprocess.call(['gksudo',Command])
 
 #Run when installing a package
 def StartRun():
-    Commands=["sudo pacman -S wget","sudo pacman -S base-devel","sudo pacman -S yaourt","sudo pacman-mirrors -g","sudo pacman -Syy"]
+    Commands=["sudo pacman -S wget --noconfirm","sudo pacman -S base-devel --noconfirm","sudo pacman -S yaourt --noconfirm","sudo pacman-mirrors -g","sudo pacman -Syy --noconfirm"]
     RunCommands(Commands)
 
 #You can edit the install.sh with this functions
@@ -26,3 +33,6 @@ def EchoMulti(Commands):
 
 def EchoSingle(Commands):
     os.system("echo "+Commands+">install.sh")
+
+def EchoPass(Text):
+    os.system("echo "+Text+">pass.txt")

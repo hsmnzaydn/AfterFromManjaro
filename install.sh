@@ -1,1 +1,1 @@
-sudo pacman -S vim
+yaourt -S geany --noconfirm
