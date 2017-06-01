@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
         self.getItems()
         infoBox = QMessageBox()
         infoBox.setIcon(QMessageBox.Information)
-        infoBox.setText("Your programs installed")
+        infoBox.setText("Your programs installed  ")
         infoBox.setWindowTitle("Information")
         infoBox.setStandardButtons(QMessageBox.Ok)
         infoBox.exec_()
