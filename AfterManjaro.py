@@ -202,7 +202,6 @@ class Ui_MainWindow(object):
         # Get name of choosed package
 
     def getItems(self):
-        installed = 0
         selected_package_Developer = ""
         items = self.Developer_listWidget.selectedItems()
         Developer_Selected = []
@@ -210,11 +209,10 @@ class Ui_MainWindow(object):
             Developer_Selected.append(self.Developer_listWidget.selectedItems()[x].text())
         selected_package_Developer = selected_package_Developer + "-".join(Developer_Selected)
         selected_install_Developer = selected_package_Developer.split("-")
-        totalProgram = len(selected_install_Developer)
-        program = totalProgram / 25
         for install in selected_install_Developer:
             JsonParse.getPackageBashCommands("Developer", install)
-            installed = installed + program
+
+
 
         selected_package_Tools = ""
         items = self.Tools_listWidget.selectedItems()
@@ -224,11 +222,9 @@ class Ui_MainWindow(object):
 
         selected_package_Tools = selected_package_Tools + "-".join(Tool_Selected)
         selected_install_Tools = selected_package_Tools.split("-")
-        totalProgram = len(selected_install_Developer)
-        program = totalProgram / 25
         for install in selected_install_Tools:
             JsonParse.getPackageBashCommands("Tools", install)
-            installed = installed + program
+
 
         selected_package_Personal = ""
         items = self.Personal_listWidget.selectedItems()
@@ -237,11 +233,8 @@ class Ui_MainWindow(object):
             Personal_Selected.append(self.Personal_listWidget.selectedItems()[x].text())
         selected_package_Personal = selected_package_Developer + "-".join(Personal_Selected)
         selected_install_Personal = selected_package_Personal.split("-")
-        totalProgram = len(selected_install_Developer)
-        program = totalProgram / 25
         for install in selected_install_Personal:
             JsonParse.getPackageBashCommands("Personal", install)
-            installed = installed + program
 
         selected_package_System = ""
         items = self.System_listWidget.selectedItems()
@@ -250,11 +243,9 @@ class Ui_MainWindow(object):
             System_Selected.append(self.System_listWidget.selectedItems()[x].text())
         selected_package_System = selected_package_Developer + "-".join(System_Selected)
         selected_install_System = selected_package_System.split("-")
-        totalProgram = len(selected_install_Developer)
-        program = totalProgram / 25
         for install in selected_install_System:
             JsonParse.getPackageBashCommands("System", install)
-            installed = installed + program
+
 
     def install(self):
         infoBox = QMessageBox()
@@ -265,7 +256,12 @@ class Ui_MainWindow(object):
         infoBox.exec_()
         BashCommands.StartRun()
         self.getItems()
-
+        infoBox = QMessageBox()
+        infoBox.setIcon(QMessageBox.Information)
+        infoBox.setText("Your programs installed")
+        infoBox.setWindowTitle("Information")
+        infoBox.setStandardButtons(QMessageBox.Ok)
+        infoBox.exec_()
 
 
         # When clicked update button

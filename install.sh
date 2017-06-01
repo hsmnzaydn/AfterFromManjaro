@@ -1,1 +1,1 @@
-yaourt -S visual-studio-code --noconfirm
+yaourt -S redshift --noconfirm
