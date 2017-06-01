@@ -2,7 +2,7 @@
 "Developer":[
 {
  "PackageName":"Anaconda",
- "PackageBashCommands":"yaourt -S anaconda"
+ "PackageBashCommands":"yaourt -S anaconda --noconfirm"
 },
 {
  "PackageName":"Android Studio",
@@ -31,7 +31,7 @@
 ,
 {
  "PackageName":"Git",
- "PackageBashCommands":"sudo pacman -S git"
+ "PackageBashCommands":"sudo pacman -S git --noconfirm"
  },
  {
  "PackageName":"intellij Idea",
@@ -57,15 +57,15 @@
 },
 {
  "PackageName":"Sublime Text",
- "PackageBashCommands":"yaourt -S sublime-text"
+ "PackageBashCommands":"yaourt -S sublime-text --noconfirm"
 },
 {
  "PackageName":"Vim",
- "PackageBashCommands":"sudo pacman -S vim"
+ "PackageBashCommands":"sudo pacman -S vim --noconfirm"
 },
 {
  "PackageName":"Visual Studio Code",
- "PackageBashCommands":"yaourt -S visual-studio-code"
+ "PackageBashCommands":"yaourt -S visual-studio-code --noconfirm"
 }
 
 ],
@@ -74,27 +74,27 @@
 "Tools":[
 {
  "PackageName":"BleachBit",
- "PackageBashCommands":"sudo pacman -S bleachbit"
+ "PackageBashCommands":"sudo pacman -S bleachbit --noconfirm"
 },
 {
  "PackageName":"Chrome",
- "PackageBashCommands":"yaourt -S google-chrome"
+ "PackageBashCommands":"yaourt -S google-chrome --noconfirm"
 },
 {
  "PackageName":"Conky & Conky Manager",
- "PackageBashCommands":["sudo pacman -S conky","sudo pacman -S conky-manager"]
+ "PackageBashCommands":["yaourt -S conky --noconfirm","yaourt -S conky-manager --noconfirm"]
 },
  {
  "PackageName":"Dropbox",
- "PackageBashCommands":"yaourt -S dropbox"
+ "PackageBashCommands":"yaourt -S dropbox --noconfirm"
 },
  {
  "PackageName":"Filezilla",
- "PackageBashCommands":"yaourt -S filezilla"
+ "PackageBashCommands":"yaourt -S filezilla --noconfirm"
 },
  {
  "PackageName":"FoxitReader",
- "PackageBashCommands":"yaourt -S foxitreader"
+ "PackageBashCommands":"yaourt -S foxitreader --noconfirm"
 },
 {
  "PackageName":"Krita",
@@ -102,11 +102,11 @@
 },
 {
  "PackageName":"MegaSync",
- "PackageBashCommands":"yaourt -S megasync"
+ "PackageBashCommands":"yaourt -S megasync --noconfirm"
 },
 {
  "PackageName":"MintStick",
- "PackageBashCommands":"yaourt mintstick-git"
+ "PackageBashCommands":"yaourt -S mintstick-git --noconfirm"
 },
 {
  "PackageName":"NylasMail",
@@ -122,7 +122,7 @@
 },
 {
  "PackageName":"Plank",
- "PackageBashCommands":"sudo pacman -S plank"
+ "PackageBashCommands":"sudo pacman -S plank --noconfirm"
 },
 {
  "PackageName":"PlayOnLinux",
@@ -138,50 +138,50 @@
 },
 {
  "PackageName":"TeamViewer",
- "PackageBashCommands":"yaourt -S teamviewer"
+ "PackageBashCommands":"yaourt -S teamviewer --noconfirm"
 },
 {
  "PackageName":"Terminator",
- "PackageBashCommands":"yaourt -S terminator"
+ "PackageBashCommands":"yaourt -S terminator --noconfirm"
 },
 {
  "PackageName":"Ulauncher",
- "PackageBashCommands":"yaourt -S ulauncher"
+ "PackageBashCommands":"yaourt -S ulauncher --noconfirm"
 },
 {
  "PackageName":"VirtualBox",
- "PackageBashCommands":"yaourt -S virtualbox"
+ "PackageBashCommands":"yaourt -S virtualbox --noconfirm"
 },
  {
  "PackageName":"VLC",
- "PackageBashCommands":"yaourt -S vlc"
+ "PackageBashCommands":"yaourt -S vlc --noconfirm"
 },
 {
  "PackageName":"VokoScreen",
- "PackageBashCommands":"yaourt -S vokoscreen"
+ "PackageBashCommands":"yaourt -S vokoscreen --noconfirm"
 },
 {
  "PackageName":"Whatsapp Desktop",
- "PackageBashCommands":"yaourt -S whatsapp-desktop"
+ "PackageBashCommands":"yaourt -S whatsapp-desktop --noconfirm"
 },
 {
  "PackageName":"Wine",
- "PackageBashCommands":"sudo pacman -S wine"
+ "PackageBashCommands":"sudo pacman -S wine --noconfirm"
 },
 {
  "PackageName":"WinUsb",
- "PackageBashCommands":"yaourt -S winusb"
+ "PackageBashCommands":"yaourt -S winusb --noconfirm"
 }
 ],
 
 "Personal":[
  {
  "PackageName":"Compiz",
- "PackageBashCommands":"yaourt -S compiz"
+ "PackageBashCommands":"yaourt -S compiz --noconfirm"
 },
  {
  "PackageName":"Flatter Icons",
- "PackageBashCommands":"yaourt -S flattr-icon-theme"
+ "PackageBashCommands":"yaourt -S flattr-icon-theme --noconfirm"
 },
  {
  "PackageName":"Numix Circle Theme",
@@ -189,16 +189,16 @@
 },
  {
  "PackageName":"Numix Square Icons",
- "PackageBashCommands":"yaourt -S numix-square-icon-theme-git"
+ "PackageBashCommands":"yaourt -S numix-square-icon-theme-git --noconfirm"
 },
 
 {
  "PackageName":"Paper Icons",
- "PackageBashCommands":"yaourt -S paper-icon-theme-git￼"
+ "PackageBashCommands":"yaourt -S paper-icon-theme-git --noconfirm"
 },
 {
  "PackageName":"Spotify",
- "PackageBashCommands":["sudo -Rsnc spotify","sudo -Syyuu","sudo pacman -Scc","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify"]
+ "PackageBashCommands":["sudo -Rsnc spotify --noconfirm","sudo -Syyuu --noconfirm","sudo pacman -Scc --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify --noconfirm"]
 }
 
 
@@ -212,11 +212,11 @@
 
 {
  "PackageName":"Preload",
- "PackageBashCommands":["sudo pacman -S preload","sudo systemctl enable preload.service"]
+ "PackageBashCommands":["sudo pacman -S preload","sudo systemctl enable preload.service --noconfirm"]
 },
 {
  "PackageName":"SSD Trim",
- "PackageBashCommands":"sudo systemctl enable fstrim.timer"
+ "PackageBashCommands":"sudo systemctl enable fstrim.timer --noconfirm"
 }
 
 
