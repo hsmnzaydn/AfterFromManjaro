@@ -4,7 +4,9 @@ Automatically download and load your selected packages and programs
 <br />
 
 <br />
-
+Double click to AfterManjaro.py
+<br />
+or
 <br />
 Open the terminal and type "python AfterManjaro.py".
 
