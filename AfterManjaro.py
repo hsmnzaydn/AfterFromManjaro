@@ -40,10 +40,7 @@ class Ui_MainWindow(object):
         self.Install_button.setFont(font)
         self.Install_button.setObjectName("Install_button")
         self.gridLayout.addWidget(self.Install_button, 2, 0, 1, 1)
-        self.Bar = QtWidgets.QProgressBar(self.centralwidget)
-        self.Bar.setProperty("value", 0)
-        self.Bar.setObjectName("Bar")
-        self.gridLayout.addWidget(self.Bar, 1, 0, 1, 1)
+
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setTitle("")
         self.groupBox_2.setObjectName("groupBox_2")
@@ -144,7 +141,6 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.groupBox_2, 0, 0, 1, 1)
         self.groupBox_2.raise_()
         self.Install_button.raise_()
-        self.Bar.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 698, 25))
@@ -219,7 +215,6 @@ class Ui_MainWindow(object):
         for install in selected_install_Developer:
             JsonParse.getPackageBashCommands("Developer", install)
             installed = installed + program
-            self.Bar.setProperty("value", installed)
 
         selected_package_Tools = ""
         items = self.Tools_listWidget.selectedItems()
@@ -234,7 +229,6 @@ class Ui_MainWindow(object):
         for install in selected_install_Tools:
             JsonParse.getPackageBashCommands("Tools", install)
             installed = installed + program
-            self.Bar.setProperty("value", installed)
 
         selected_package_Personal = ""
         items = self.Personal_listWidget.selectedItems()
@@ -248,7 +242,6 @@ class Ui_MainWindow(object):
         for install in selected_install_Personal:
             JsonParse.getPackageBashCommands("Personal", install)
             installed = installed + program
-            self.Bar.setProperty("value", installed)
 
         selected_package_System = ""
         items = self.System_listWidget.selectedItems()
@@ -262,18 +255,16 @@ class Ui_MainWindow(object):
         for install in selected_install_System:
             JsonParse.getPackageBashCommands("System", install)
             installed = installed + program
-            self.Bar.setProperty("value", installed)
 
     def install(self):
         infoBox = QMessageBox()
         infoBox.setIcon(QMessageBox.Information)
-        infoBox.setText("Your programs are being installed")
+        infoBox.setText("Your programs are being installed.Please wait")
         infoBox.setWindowTitle("Information")
         infoBox.setStandardButtons(QMessageBox.Ok)
         infoBox.exec_()
         BashCommands.StartRun()
         self.getItems()
-        self.Bar.setProperty("value", 100)
 
 
 
@@ -283,7 +274,6 @@ class Ui_MainWindow(object):
         Update.Update()
 
     def about(self):
-        self.Bar.setProperty("value", 50)
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', new=2)
 
 
