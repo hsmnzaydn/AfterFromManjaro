@@ -113,7 +113,11 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="Tools_listWidget"/>
+            <widget class="QListWidget" name="Tools_listWidget">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::MultiSelection</enum>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -148,7 +152,11 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="Personal_listWidget"/>
+            <widget class="QListWidget" name="Personal_listWidget">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::MultiSelection</enum>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -183,7 +191,11 @@
             </widget>
            </item>
            <item>
-            <widget class="QListWidget" name="System_listWidget"/>
+            <widget class="QListWidget" name="System_listWidget">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::MultiSelection</enum>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>

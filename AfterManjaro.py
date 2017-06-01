@@ -22,14 +22,12 @@ Tool_list=[]
 Personal_list=[]
 System_list=[]
 
-
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(698, 481)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -69,9 +67,6 @@ class Ui_MainWindow(object):
         self.gridLayout_4.addWidget(self.label_9, 0, 0, 1, 1)
         self.Developer_listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents_11)
         self.Developer_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
-        self.Tools_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
-        self.System_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
-        self.Personal_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.Developer_listWidget.setObjectName("Developer_listWidget")
         self.gridLayout_4.addWidget(self.Developer_listWidget, 1, 0, 1, 1)
         self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_11)
@@ -93,6 +88,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         self.verticalLayout_4.addWidget(self.label_4)
         self.Tools_listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents_6)
+        self.Tools_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.Tools_listWidget.setObjectName("Tools_listWidget")
         self.verticalLayout_4.addWidget(self.Tools_listWidget)
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_6)
@@ -114,6 +110,7 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName("label_6")
         self.verticalLayout_6.addWidget(self.label_6)
         self.Personal_listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents_8)
+        self.Personal_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.Personal_listWidget.setObjectName("Personal_listWidget")
         self.verticalLayout_6.addWidget(self.Personal_listWidget)
         self.scrollArea_4.setWidget(self.scrollAreaWidgetContents_8)
@@ -135,6 +132,7 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName("label_7")
         self.verticalLayout_7.addWidget(self.label_7)
         self.System_listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents_9)
+        self.System_listWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
         self.System_listWidget.setObjectName("System_listWidget")
         self.verticalLayout_7.addWidget(self.System_listWidget)
         self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_9)
@@ -164,21 +162,15 @@ class Ui_MainWindow(object):
         self.menuSettings.addAction(self.Update_button)
         self.menuSettings.addAction(self.About_button)
         self.menubar.addAction(self.menuSettings.menuAction())
-
-
-
         global Developer_list, Tool_list, Personal_list
         global System_list
-
 
         Developer_list = JsonParse.getPackageName("Developer")
         Tool_list = JsonParse.getPackageName("Tools")
         Personal_list = JsonParse.getPackageName("Personal")
         System_list = JsonParse.getPackageName("System")
 
-
-
-        #Adds incoming package names to the list
+        # Adds incoming package names to the list
         for Package_Developer in Developer_list:
             self.Developer_listWidget.addItem(Package_Developer)
         for Package_Tools in Tool_list:
@@ -188,14 +180,13 @@ class Ui_MainWindow(object):
         for Package_System in System_list:
             self.System_listWidget.addItem(Package_System)
 
-        #If the version number does not match the version number in the repository, the update button opens.
+        # If the version number does not match the version number in the repository, the update button opens.
 
 
-        #to install and update functions
+        # to install and update functions
         self.Install_button.clicked.connect(self.install)
         self.Update_button.triggered.connect(self.update)
         self.About_button.triggered.connect(self.about)
-
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -212,65 +203,66 @@ class Ui_MainWindow(object):
         self.Update_button.setText(_translate("MainWindow", "Update"))
         self.About_button.setText(_translate("MainWindow", "About "))
 
-    # Get name of choosed package
+        # Get name of choosed package
+
     def getItems(self):
-            installed=0
-            selected_package_Developer = ""
-            items = self.Developer_listWidget.selectedItems()
-            Developer_Selected = []
-            for x in range(len(items)):
-                Developer_Selected.append(self.Developer_listWidget.selectedItems()[x].text())
-            selected_package_Developer = selected_package_Developer + "-".join(Developer_Selected)
-            selected_install_Developer = selected_package_Developer.split("-")
-            totalProgram=len(selected_install_Developer)
-            program=totalProgram/25
-            for install in selected_install_Developer:
-                JsonParse.getPackageBashCommands("Developer", install)
-                installed=installed+program
-                self.Bar.setProperty("value",installed)
+        installed = 0
+        selected_package_Developer = ""
+        items = self.Developer_listWidget.selectedItems()
+        Developer_Selected = []
+        for x in range(len(items)):
+            Developer_Selected.append(self.Developer_listWidget.selectedItems()[x].text())
+        selected_package_Developer = selected_package_Developer + "-".join(Developer_Selected)
+        selected_install_Developer = selected_package_Developer.split("-")
+        totalProgram = len(selected_install_Developer)
+        program = totalProgram / 25
+        for install in selected_install_Developer:
+            JsonParse.getPackageBashCommands("Developer", install)
+            installed = installed + program
+            self.Bar.setProperty("value", installed)
 
-            selected_package_Tools = ""
-            items = self.Tools_listWidget.selectedItems()
-            Tool_Selected = []
-            for x in range(len(items)):
-                Tool_Selected.append(self.Tools_listWidget.selectedItems()[x].text())
+        selected_package_Tools = ""
+        items = self.Tools_listWidget.selectedItems()
+        Tool_Selected = []
+        for x in range(len(items)):
+            Tool_Selected.append(self.Tools_listWidget.selectedItems()[x].text())
 
-            selected_package_Tools = selected_package_Tools + "-".join(Tool_Selected)
-            selected_install_Tools = selected_package_Tools.split("-")
-            totalProgram = len(selected_install_Developer)
-            program = totalProgram / 25
-            for install in selected_install_Tools:
-                JsonParse.getPackageBashCommands("Tools", install)
-                installed=installed+program
-                self.Bar.setProperty("value", installed)
+        selected_package_Tools = selected_package_Tools + "-".join(Tool_Selected)
+        selected_install_Tools = selected_package_Tools.split("-")
+        totalProgram = len(selected_install_Developer)
+        program = totalProgram / 25
+        for install in selected_install_Tools:
+            JsonParse.getPackageBashCommands("Tools", install)
+            installed = installed + program
+            self.Bar.setProperty("value", installed)
 
-            selected_package_Personal = ""
-            items = self.Personal_listWidget.selectedItems()
-            Personal_Selected = []
-            for x in range(len(items)):
-                Personal_Selected.append(self.Personal_listWidget.selectedItems()[x].text())
-            selected_package_Personal = selected_package_Developer + "-".join(Personal_Selected)
-            selected_install_Personal = selected_package_Personal.split("-")
-            totalProgram = len(selected_install_Developer)
-            program = totalProgram / 25
-            for install in selected_install_Personal:
-                JsonParse.getPackageBashCommands("Personal", install)
-                installed = installed + program
-                self.Bar.setProperty("value", installed)
+        selected_package_Personal = ""
+        items = self.Personal_listWidget.selectedItems()
+        Personal_Selected = []
+        for x in range(len(items)):
+            Personal_Selected.append(self.Personal_listWidget.selectedItems()[x].text())
+        selected_package_Personal = selected_package_Developer + "-".join(Personal_Selected)
+        selected_install_Personal = selected_package_Personal.split("-")
+        totalProgram = len(selected_install_Developer)
+        program = totalProgram / 25
+        for install in selected_install_Personal:
+            JsonParse.getPackageBashCommands("Personal", install)
+            installed = installed + program
+            self.Bar.setProperty("value", installed)
 
-            selected_package_System = ""
-            items = self.System_listWidget.selectedItems()
-            System_Selected = []
-            for x in range(len(items)):
-                System_Selected.append(self.System_listWidget.selectedItems()[x].text())
-            selected_package_System = selected_package_Developer + "-".join(System_Selected)
-            selected_install_System = selected_package_System.split("-")
-            totalProgram = len(selected_install_Developer)
-            program = totalProgram / 25
-            for install in selected_install_System:
-                JsonParse.getPackageBashCommands("System", install)
-                installed = installed + program
-                self.Bar.setProperty("value", installed)
+        selected_package_System = ""
+        items = self.System_listWidget.selectedItems()
+        System_Selected = []
+        for x in range(len(items)):
+            System_Selected.append(self.System_listWidget.selectedItems()[x].text())
+        selected_package_System = selected_package_Developer + "-".join(System_Selected)
+        selected_install_System = selected_package_System.split("-")
+        totalProgram = len(selected_install_Developer)
+        program = totalProgram / 25
+        for install in selected_install_System:
+            JsonParse.getPackageBashCommands("System", install)
+            installed = installed + program
+            self.Bar.setProperty("value", installed)
 
     def install(self):
         infoBox = QMessageBox()
@@ -281,32 +273,27 @@ class Ui_MainWindow(object):
         infoBox.exec_()
         BashCommands.StartRun()
         self.getItems()
-        self.Bar.setProperty("value",100)
+        self.Bar.setProperty("value", 100)
 
 
 
         # When clicked update button
+
     def update(self):
         Update.Update()
 
     def about(self):
-        self.Bar.setProperty("value",50)
+        self.Bar.setProperty("value", 50)
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', new=2)
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
-        app = QApplication(sys.argv)
-        window = QMainWindow()
+    app = QApplication(sys.argv)
+    window = QMainWindow()
 
-        ui = Ui_MainWindow()
-        ui.setupUi(window)
+    ui = Ui_MainWindow()
+    ui.setupUi(window)
 
-        window.show()
-        sys.exit(app.exec_())
+    window.show()
+    sys.exit(app.exec_())
 
