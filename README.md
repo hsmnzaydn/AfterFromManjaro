@@ -3,7 +3,9 @@ Automatically download and load your selected packages and programs
 <h1>Usage</h1>
 <br />
 Double click to AfterManjaro.py
+<br />
 or
+<br />
 Open the terminal and type "sudo python AfterManjaro.py".
 
 <br />
