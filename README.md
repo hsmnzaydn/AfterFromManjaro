@@ -11,11 +11,11 @@ Open the terminal in directory and type "python AfterManjaro.py".
 <br />
 <h2>Index</h2>
 <br />
-Android Studio(All distro)
+Android Studio(AUR)
 <br />
 PyCharm(AUR)
 <br />
-Anaconda(All distro)
+Anaconda(AUR)
 <br />
 Sublime Text(AUR)
 <br />
