@@ -246,7 +246,7 @@ class Ui_MainWindow(object):
         for install in selected_install_System:
             JsonParse.getPackageBashCommands("System", install)
 
-
+    # When clicked Install button
     def install(self):
         infoBox = QMessageBox()
         infoBox.setIcon(QMessageBox.Information)
@@ -275,6 +275,7 @@ class Ui_MainWindow(object):
         infoBox.setStandardButtons(QMessageBox.Ok)
         infoBox.exec_()
 
+    # When clicked about button
     def about(self):
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', new=2)
 

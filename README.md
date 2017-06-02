@@ -2,9 +2,11 @@ Automatically download and load your selected packages and programs
 <br />
 <h1>Usage</h1>
 <br />
-
+Double click to AfterManjaro.desktop
 <br />
-Open the terminal and type "python AfterManjaro.py".
+or
+<br />
+Open the terminal in directory and type "python AfterManjaro.py".
 
 <br />
 <h2>Index</h2>
