@@ -4,6 +4,5 @@ Type=Application
 Name=After Manjaro
 Exec=python ./AfterManjaro.py
 Icon=./icon.png
-Path=./
 Type=Application
 Terminal=true
