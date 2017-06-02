@@ -104,3 +104,7 @@ SSD Trim(AUR)
 Preload(AUR)
 <br />
 Compiz(AUR)
+<br />
+Popcorn Time(AUR)
+<br />
+Telegram Desktop(AUR)

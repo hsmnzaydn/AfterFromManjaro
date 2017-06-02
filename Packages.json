@@ -140,6 +140,10 @@
  "PackageName":"TeamViewer",
  "PackageBashCommands":"yaourt -S teamviewer --noconfirm"
 },
+ {
+ "PackageName":"Telegram Desktop",
+ "PackageBashCommands":"yaourt -S telegram-desktop --noconfirm"
+},
 {
  "PackageName":"Terminator",
  "PackageBashCommands":"yaourt -S terminator --noconfirm"
@@ -196,6 +200,11 @@
  "PackageName":"Paper Icons",
  "PackageBashCommands":"yaourt -S paper-icon-theme-git --noconfirm"
 },
+{
+ "PackageName":"Popcorn Time",
+ "PackageBashCommands": "yaourt -S popcorntime --noconfirm"
+}
+,
 {
  "PackageName":"Spotify",
  "PackageBashCommands":["sudo -Rsnc spotify --noconfirm","sudo -Syyuu --noconfirm","sudo pacman -Scc --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify --noconfirm"]
