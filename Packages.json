@@ -150,7 +150,7 @@
 },
 {
  "PackageName":"VirtualBox",
- "PackageBashCommands":"yaourt -S virtualbox --noconfirm"
+ "PackageBashCommands":"yaourt -S virtualbox"
 },
  {
  "PackageName":"VLC",
