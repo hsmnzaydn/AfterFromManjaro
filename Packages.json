@@ -150,7 +150,7 @@
 },
 {
  "PackageName":"VirtualBox",
- "PackageBashCommands":"yaourt -S virtualbox"
+ "PackageBashCommands":["yaourt -S virtualbox","teamviewer --daemon start"]
 },
  {
  "PackageName":"VLC",
