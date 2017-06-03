@@ -175,6 +175,10 @@
 {
  "PackageName":"WinUsb",
  "PackageBashCommands":"yaourt -S winusb --noconfirm"
+},
+{
+ "PackageName":"Xtreme Download Manager",
+ "PackageBashCommands":"yaourt -S xdman --noconfirm"
 }
 ],
 
