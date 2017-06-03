@@ -23,8 +23,7 @@ def getPackageBashCommands(Type,PackageName):
                 else:
                     Com = Com + "\n" + Command
             if len(Command) == 1:
-               BashCommands.EchoSingle(Com)
-               BashCommands.RunSh("./install.sh")
+               BashCommands.RunSingleCommand(Com)
             else:
                 BashCommands.EchoMulti(Com)
 #get version from url

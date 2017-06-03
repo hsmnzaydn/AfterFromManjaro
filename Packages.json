@@ -65,8 +65,12 @@
  "PackageBashCommands":"yaourt -S phpstorm --noconfirm"
 },
  {
- "PackageName":"PyCharm",
+ "PackageName":"PyCharm(Community)",
  "PackageBashCommands":"yaourt -S pycharm-community --noconfirm"
+},
+ {
+ "PackageName":"PyCharm(Professional)",
+ "PackageBashCommands":"yaourt -S pycharm-professional --noconfirm"
 },
 {
  "PackageName":"Sublime Text",

@@ -4,5 +4,6 @@ Type=Application
 Name=After Manjaro
 Exec=python ./AfterManjaro.py
 Icon=./icon.png
+Comment=Your Manjaro distribution automatically loads packages for you
 Type=Application
 Terminal=true
