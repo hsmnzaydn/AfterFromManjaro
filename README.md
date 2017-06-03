@@ -108,3 +108,7 @@ Compiz(AUR)
 Popcorn Time(AUR)
 <br />
 Telegram Desktop(AUR)
+<br />
+Xtreme Dowload Manager(AUR)
+<br />
+Numix GTK Theme
