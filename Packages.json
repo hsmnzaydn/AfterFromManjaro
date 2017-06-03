@@ -17,6 +17,11 @@
  "PackageName":"Atom Text Editor",
  "PackageBashCommands":"yaourt -S atom --noconfirm"
 }
+ ,
+{
+ "PackageName":"Docker",
+ "PackageBashCommands":"yaourt -S docker --noconfirm"
+}
 ,
 
 {
@@ -34,6 +39,10 @@
  "PackageBashCommands":"sudo pacman -S git --noconfirm"
  },
  {
+ "PackageName":"Gitlab",
+ "PackageBashCommands":"sudo pacman -S gitlab --noconfirm"
+ },
+ {
  "PackageName":"intellij Idea",
  "PackageBashCommands":"yaourt -S intellij-idea-community-edition --noconfirm"
 }
@@ -46,6 +55,10 @@
  {
  "PackageName":"NetBeans",
  "PackageBashCommands":"yaourt -S netbeans --noconfirm"
+},
+ {
+ "PackageName":"NPM",
+ "PackageBashCommands":"yaourt -S npm --noconfirm"
 },
  {
  "PackageName":"PhpStorm",
@@ -74,7 +87,11 @@
 "Tools":[
 {
  "PackageName":"BleachBit",
- "PackageBashCommands":"sudo pacman -S bleachbit --noconfirm"
+ "PackageBashCommands":"sudo pacman -S blender --noconfirm"
+},
+ {
+ "PackageName":"Blender",
+ "PackageBashCommands":"yaourt -S google-chrome --noconfirm"
 },
 {
  "PackageName":"Chrome",
@@ -175,6 +192,10 @@
 {
  "PackageName":"WinUsb",
  "PackageBashCommands":"yaourt -S winusb --noconfirm"
+},
+{
+ "PackageName":"WPS Office",
+ "PackageBashCommands":"yaourt -S wps-office --noconfirm"
 },
 {
  "PackageName":"Xtreme Download Manager",

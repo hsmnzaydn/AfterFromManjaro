@@ -111,4 +111,10 @@ Telegram Desktop(AUR)
 <br />
 Xtreme Dowload Manager(AUR)
 <br />
-Numix GTK Theme
+Numix GTK Theme(AUR)
+<br />
+Gitlab(AUR)
+<br />
+NPM (AUR)
+<br />
+Blender (AUR)
