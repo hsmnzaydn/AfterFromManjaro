@@ -254,7 +254,7 @@ class Ui_MainWindow(object):
         infoBox.setWindowTitle("Information")
         infoBox.setStandardButtons(QMessageBox.Ok)
         infoBox.exec_()
-       # BashCommands.StartRun()
+        BashCommands.StartRun()
         self.getItems()
         infoBox = QMessageBox()
         infoBox.setIcon(QMessageBox.Information)

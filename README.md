@@ -120,3 +120,5 @@ Gitlab(AUR)
 NPM (AUR)
 <br />
 Blender (AUR)
+<br />
+KdeConnect(AUR)

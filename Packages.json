@@ -117,10 +117,15 @@
  "PackageName":"FoxitReader",
  "PackageBashCommands":"yaourt -S foxitreader --noconfirm"
 },
+ {
+ "PackageName":"KdeConnect",
+ "PackageBashCommands":"yaourt -S kdeconnect --noconfirm"
+},
 {
  "PackageName":"Krita",
  "PackageBashCommands":"yaourt -S krita --noconfirm"
 },
+
 {
  "PackageName":"MegaSync",
  "PackageBashCommands":"yaourt -S megasync --noconfirm"
