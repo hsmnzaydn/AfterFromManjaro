@@ -118,6 +118,10 @@
  "PackageBashCommands":"yaourt -S foxitreader --noconfirm"
 },
  {
+ "PackageName":"ImageMagick",
+ "PackageBashCommands":"yaourt -S imagemagick --noconfirm"
+},
+ {
  "PackageName":"KdeConnect",
  "PackageBashCommands":"yaourt -S kdeconnect --noconfirm"
 },
