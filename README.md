@@ -122,3 +122,5 @@ NPM (AUR)
 Blender (AUR)
 <br />
 KdeConnect(AUR)
+<br />
+Gcc(AUR)
