@@ -27,6 +27,9 @@
 {
  "PackageName":"Eclipse",
  "PackageBashCommands":"yaourt -S eclipse --noconfirm"
+}, {
+ "PackageName":"Gcc",
+ "PackageBashCommands":"yaourt -S gcc --noconfirm"
 }
 ,
  {
