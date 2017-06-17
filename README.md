@@ -14,7 +14,7 @@ Open the terminal in directory and type "python AfterManjaro.py".
 
 <h2>Dependencies</h2>
 <br />
-Python 3.5
+Python 3
 <br />
 PyQt5
 
