@@ -94,11 +94,11 @@
 "Tools":[
 {
  "PackageName":"BleachBit",
- "PackageBashCommands":"sudo pacman -S blender --noconfirm"
+ "PackageBashCommands": "sudo pacman -S bleachbit --noconfirm"
 },
  {
  "PackageName":"Blender",
- "PackageBashCommands":"yaourt -S google-chrome --noconfirm"
+ "PackageBashCommands":"sudo pacman -S blender --noconfirm"
 },
 {
  "PackageName":"Chrome",
