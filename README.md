@@ -11,6 +11,13 @@ or
 Open the terminal in directory and type "python AfterManjaro.py".
 
 <br />
+
+<h2>Dependencies</h2>
+<br />
+Python 3.5
+<br />
+PyQt5
+
 <h2>Index</h2>
 <br />
 Android Studio(AUR)
