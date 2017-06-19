@@ -21,8 +21,8 @@ class installThread(QThread):
         @postcondition: A new QThread is created, and when set to run it opens a
                         terminal which executes the command
         """
-        super().__init__(self)
-        self._command = "yaourt -Syyu && " + self._getInstallCommand(packages)
+        QThread.__init__(self)
+        self._command = self._getInstallCommand(packages)
         self._terminal = terminal
         
     def _getInstallCommand(self, packages):
@@ -49,9 +49,11 @@ class installThread(QThread):
         #FIXME: Create options to select which terminal to use and expand to
         # support most common terminals
         if self._terminal == "konsole":
-            command = self._terminal + " -e " + '"{}"'.format(self._command)
+            refreshCommand = self._terminal + " -e \"yaourt -Syyu\""
+            installCommand = self._terminal + " -e " + '"{}"'.format(self._command)
         
-        os.system(command)
+        os.system(refreshCommand)
+        os.system(installCommand)
         
         
         
