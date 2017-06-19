@@ -17,6 +17,10 @@ Open the terminal in directory and type "python AfterManjaro.py".
 Python 3
 <br />
 PyQt5
+<br />
+PyAlpm
+<br />
+yaourt
 
 <h2>Index</h2>
 <br />
