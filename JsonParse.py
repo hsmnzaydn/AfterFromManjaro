@@ -5,6 +5,7 @@ import BashCommands
 # Download the package list from github
 with urllib.request.urlopen("https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/master/Packages.json") as url:
     data = json.loads(url.read().decode())
+#FIXME: A network connection should have error checking
 
 
 def getPackageName(Type):
@@ -13,7 +14,7 @@ def getPackageName(Type):
     
     @param Type: a String representing the category of a set of packages
     @precondition: data has Type as a key
-    @postcondition: @return is a list of Strings containing package names which
+    @postcondition: @return is a List of Strings containing package names which
                     are associated with Type.
     """
     Packages = []
@@ -31,7 +32,8 @@ def getPackageBashCommands(Type, PackageName):
     @param PackageName: a String representing the name of a package
     @precondition: data has Type as a key and data[Type] has a dictionary 
                     containing PackageName as a value for the "PackageName" key
-    @postcondition: The bash
+    @postcondition: The bash command to install the package is added to be
+                    executed.
     """
     for row in data[Type]:
         command = ""
