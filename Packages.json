@@ -92,6 +92,10 @@
 
 
 "Tools":[
+ {
+ "PackageName":"Adobe Flash Player",
+ "PackageBashCommands": "sudo pacman -S flashplugin --noconfirm"
+},
 {
  "PackageName":"BleachBit",
  "PackageBashCommands": "sudo pacman -S bleachbit --noconfirm"
