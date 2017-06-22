@@ -11,18 +11,21 @@ class installThread(QThread):
     A QThread which will spawn a terminal and run the installation commands
     """
     
-    def __init__(self, packages, terminal="konsole"): #FIXME: Remove default terminal
+    def __init__(self, packages, commands, terminal="konsole"): #FIXME: Remove default terminal
         """
         Constructor:
         @param packages: A List of Strings of package names
         @param terminal: A String which contains the name of the terminal to use
+        @param commands: A List of Strings of bash commands to run after the
+                packages have been installed.
         @precondition: Each package name in the list of packages must exist in 
                         the standard repository or the AUR.
         @postcondition: A new QThread is created, and when set to run it opens a
                         terminal which executes the command
         """
         QThread.__init__(self)
-        self._command = self._getInstallCommand(packages)
+        self._installCommand = self._getInstallCommand(packages)
+        self._postCommands = list(commands)
         self._terminal = terminal
         
     def _getInstallCommand(self, packages):
@@ -49,11 +52,18 @@ class installThread(QThread):
         #FIXME: Create options to select which terminal to use and expand to
         # support most common terminals
         if self._terminal == "konsole":
-            refreshCommand = self._terminal + " -e \"yaourt -Syyu\""
-            installCommand = self._terminal + " -e " + '"{}"'.format(self._command)
+            refreshCommand = self._terminal + " -e \"yaourt -Syy\""
+            installCommand = (self._terminal + " -e " + 
+                              '"{}"'.format(self._installCommand))
+            postCommands = []
+            for bashCommand in self._postCommands:
+                postCommands.append(self._terminal + 
+                                    " -e \"{}\"".format(bashCommand))
         
         os.system(refreshCommand)
         os.system(installCommand)
+        for command in postCommands:
+            os.system(command)
         
         
         
