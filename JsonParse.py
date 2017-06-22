@@ -9,7 +9,7 @@ class JsonParse ():
     Methods:
         getPackageCategories - Returns a list of categories which packages are
                                 separated into.
-        getPackageName - Returns a list of package names in a given category
+        getAllProgramNames - Returns a list of package names in a given category
         getPackageBashCommands - Returns a list of bash commands to be executed
                                 when a package is installed
         getVersion - Returns the version of the Packages.json
@@ -38,7 +38,7 @@ class JsonParse ():
         return self._data["Categories"]
 
 
-    def getPackageName(self, category):
+    def getAllProgramNames(self, category):
         """
         Get all package names from url
         
@@ -52,6 +52,19 @@ class JsonParse ():
         for packageName in self._data["Packages"][category]:
             Packages.append(packageName)
         return Packages
+    
+    
+    def getPackageName(self, category, programName):
+        """
+        Returns the package name of a program
+        @param category: A String containing the category the package is in
+        @param programName: A String containing the name of the program as
+                displayed in the GUI
+        @precondition: category and programName must exist in the Packages.json
+        @postcondition: @return is a String containing the package name of the 
+                        program
+        """
+        return self._data["Packages"][category][programName]["PackageName"]
     
     
     def getPackageBashCommands(self, category, packageName):

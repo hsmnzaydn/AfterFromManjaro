@@ -50,7 +50,7 @@ class Application():
             #FIXME: Need to disable or exit the program here
         
         for category in self._jsonParse.getPackageCategories():
-            self._packages[category] = self._jsonParse.getPackageName(category)
+            self._packages[category] = self._jsonParse.getAllProgramNames(category)
             
     def _addPackagesToUi(self):
         """
@@ -73,83 +73,89 @@ class Application():
     def _getItems(self):
         """
         Gets the selected items from the list widgets in the UI and sets those
-        packages to be installed. FIXME: This method is needlessly complicated
+        packages to be installed.
+        @precondition: UI is initialised 
+        @postcondition: @result is a Dictionary which maps Strings to a List of
+                        Strings. Each key in @result is a category
+                        in Packages.json, and each string in the mapped list is
+                        a selected program in the GUI list views.
         """
-        selected_package_Developer = ""
-        items = self._ui.Developer_listWidget.selectedItems()
-        Developer_Selected = []
-        for x in range(len(items)):
-            Developer_Selected.append(self.Developer_listWidget.selectedItems()[x].text())
-        selected_package_Developer = selected_package_Developer + "-".join(Developer_Selected)
-        selected_install_Developer = selected_package_Developer.split("-") #???
-        for install in selected_install_Developer:
-            JsonParse.getPackageBashCommands("Developer", install)
-
-
-
-        selected_package_Tools = ""
-        items = self._ui.Tools_listWidget.selectedItems()
-        Tool_Selected = []
-        for x in range(len(items)):
-            Tool_Selected.append(self.Tools_listWidget.selectedItems()[x].text())
-
-        selected_package_Tools = selected_package_Tools + "-".join(Tool_Selected)
-        selected_install_Tools = selected_package_Tools.split("-") #???
-        for install in selected_install_Tools:
-            JsonParse.getPackageBashCommands("Tools", install)
-
-
-        selected_package_Personal = ""
-        items = self._ui.Personal_listWidget.selectedItems()
-        Personal_Selected = []
-        for x in range(len(items)):
-            Personal_Selected.append(self.Personal_listWidget.selectedItems()[x].text())
-        selected_package_Personal = selected_package_Developer + "-".join(Personal_Selected)
-        selected_install_Personal = selected_package_Personal.split("-") #???
-        for install in selected_install_Personal:
-            JsonParse.getPackageBashCommands("Personal", install)
-
-        selected_package_System = ""
-        items = self._ui.System_listWidget.selectedItems()
-        System_Selected = []
-        for x in range(len(items)):
-            System_Selected.append(self.System_listWidget.selectedItems()[x].text())
-        selected_package_System = selected_package_Developer + "-".join(System_Selected)
-        selected_install_System = selected_package_System.split("-") #???
-        for install in selected_install_System:
-            JsonParse.getPackageBashCommands("System", install)
+        selectedItems = {}
+        selectedItems["Developer"] = (
+            self._ui.Developer_listWidget.selectedItems())
+        selectedItems["Tools"] = self._ui.Tools_listWidget.selectedItems()
+        selectedItems["Personal"] = self._ui.Personal_listWidget.selectedItems()
+        selectedItems["System"] = self._ui.System_listWidget.selectedItems()
+        return selectedItems
+    
+    def _getPackagesToInstall(self, selectedItems):
+        """
+        Takes a dictionary of selectedItems and returns the list of package 
+        names to install.
+        @param selectedItems: A Dictionary which maps Strings to a List of 
+                Strings. Maps the category of the programs to a list of all
+                selected programs which are in that category. 
+        @postcondition: @return is a List of Strings of valid package names 
+                        which are selected for installation
+        """
+        packagesToInstall = []
+        for category in selectedItems:
+            for selectedProgram in selectedItems[category]:
+                packageName = self._jsonParse.getPackageName(category, 
+                                                             selectedProgram)
+                if packageName:
+                    packagesToInstall.append(packageName)
+            
+        return packagesToInstall
+    
+    
+    def _getPostCommands(self, selectedItems):
+        """
+        Takes a dictionary of selectedItems and returns the list of any commands
+        to run after packages have been installed.
+        @param selectedItems: A Dictionary which maps Strings to a List of 
+                Strings. Maps the category of the programs to a list of all
+                selected programs which are in that category. 
+        @postcondition: @return is a List of Strings of bash commands to be
+                        executed after packages are installed
+        """
+        postCommands = []
+        for category in selectedItems:
+            for selectedProgram in selectedItems[category]:
+                postCommands.extend(
+                    self._jsonParse.getPackageBashCommands(category, 
+                                                           selectedProgram))
+        
+        return postCommands
+        
             
     def handleInstall(self):
         """
         Runs when the install button is clicked. Handles installing the selected
         packages.
         """
-        infoBox = QMessageBox()
-        infoBox.setIcon(QMessageBox.Information)
-        infoBox.setText("Your programs are being installed.Please wait")
-        infoBox.setWindowTitle("Information")
-        infoBox.setStandardButtons(QMessageBox.Ok)
-        infoBox.exec_()
-        BashCommands.StartRun()
-        self._getItems()
-        infoBox = QMessageBox()
-        infoBox.setIcon(QMessageBox.Information)
-        infoBox.setText("Your programs installed  ")
-        infoBox.setWindowTitle("Information")
-        infoBox.setStandardButtons(QMessageBox.Ok)
-        infoBox.exec_()
+        self.showInformation("Information", 
+                             "Your programs are being installed.Please wait")
+        
+        # Get selected packages and commands to run
+        selectedItems = self._getItems()
+        packagesToInstall = self._getPackagesToInstall(selectedItems)
+        postCommands = self._getPostCommands(selectedItems)
+        
+        # Run the installation and post commands
+        self._installThread = installation.installThread(packagesToInstall, 
+                                                        postCommands)
+        self._installThread.start()
+        
+        self.showInformation("Information", "Your programs installed")
         
     def handleUpdate(self):
         """
         Runs when the update button is clicked. Handles updating the program.
         """
         Update.Update()
-        infoBox = QMessageBox()
-        infoBox.setIcon(QMessageBox.Information)
-        infoBox.setText("Updated")
-        infoBox.setWindowTitle("Information")
-        infoBox.setStandardButtons(QMessageBox.Ok)
-        infoBox.exec_()
+        self.showInformation("Updated", 
+                             "The software has updated to the latest version")
         
     def about(self):
         """
@@ -157,6 +163,22 @@ class Application():
         """
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', 
                         new=2)
+        
+    
+    def showInformation(self, title, message):
+        """
+        Opens a window which displays information to the UI.
+        @param title: A String which will be the window title for the message
+        @param message: A String which is the information which will be
+                displayed in the window.
+        @postcondition: A QMessageBox() appears displaying the information.
+        """
+        infoBox = QMessageBox()
+        infoBox.setIcon(QMessageBox.Information)
+        infoBox.setText(message)
+        infoBox.setWindowTitle(title)
+        infoBox.setStandardButtons(QMessageBox.Ok)
+        infoBox.exec_()
         
     def showError(self, title, errorMessage):
         """
