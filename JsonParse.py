@@ -3,7 +3,8 @@ import json
 import BashCommands
 
 # Download the package list from github
-with urllib.request.urlopen("https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/master/Packages.json") as url:
+URL = "https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/redoInstallation/Packages.json" #FIXME: Change back to master when merging back to master
+with urllib.request.urlopen(URL) as url:
     data = json.loads(url.read().decode())
 #FIXME: A network connection should have error checking
 
@@ -20,7 +21,7 @@ def getPackageName(Type):
     Packages = []
 
     for row in data[Type]:
-        Packages.append(row["PackageName"])
+        Packages.append(row["ProgramName"])
     return Packages
 
 
