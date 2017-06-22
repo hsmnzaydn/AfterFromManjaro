@@ -1,71 +1,89 @@
 import urllib.request
 import json
-import BashCommands
 
-# Download the package list from github
-URL = "https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/redoInstallation/Packages.json" #FIXME: Change back to master when merging back to master
-with urllib.request.urlopen(URL) as url:
-    data = json.loads(url.read().decode())
-#FIXME: A network connection should have error checking
-
-
-def getPackageName(Type):
+class JsonParse ():
     """
-    Get all package names from url
+    Retrieves the latest version of Packages.json from github and parses the 
+    json file into a form which Python can understand.
     
-    @param Type: a String representing the category of a set of packages
-    @precondition: data has Type as a key
-    @postcondition: @return is a List of Strings containing package names which
-                    are associated with Type.
+    Methods:
+        getPackageCategories - Returns a list of categories which packages are
+                                separated into.
+        getPackageName - Returns a list of package names in a given category
+        getPackageBashCommands - Returns a list of bash commands to be executed
+                                when a package is installed
+        getVersion - Returns the version of the Packages.json
+        getGithubRepo - Returns the URL of the application's github repository.
     """
-    Packages = []
-
-    for row in data[Type]:
-        Packages.append(row["ProgramName"])
-    return Packages
-
-
-def getPackageBashCommands(Type, PackageName):
-    """
-    Get bashCommands of Package from url
     
-    @param Type: a String representing the category of a set of packages
-    @param PackageName: a String representing the name of a package
-    @precondition: data has Type as a key and data[Type] has a dictionary 
-                    containing PackageName as a value for the "PackageName" key
-    @postcondition: The bash command to install the package is added to be
-                    executed.
-    """
-    for row in data[Type]:
-        command = ""
-        if row["PackageName"] == PackageName:
-            for packageCommand in row["PackageBashCommands"]:
-                if len(packageCommand) == 1:
-                    command = command + "" + packageCommand
-                else:
-                    command = command + "\n" + packageCommand
-            if len(packageCommand) == 1:
-                BashCommands.RunSingleCommand(command)
-            else:
-                BashCommands.EchoMulti(command)
-
-
-def getVersion():
-    """
-    get version from url
+    _URL = "https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/redoInstallation/Packages.json" #FIXME: Change back to master when merging back to master
     
-    @precondition: data has a "Version" key
-    @postcondition: @Return is a String containing the program version 
-                    information
-    """
-    return data["Version"]
-
-
-def getGithubRepo():
-    """
-    get GithubRepo from url
+    def __init__(self):
+        """
+        Constructor: Downloads the json file and parses
+        @postcondition: _data is populated with the parsed json file
+        """
+        # Download the package list from github
+        with urllib.request.urlopen(self._URL) as url:
+            self._data = json.loads(url.read().decode())
+        
     
-    @precondition: data has a "GithubRepo" key
-    @postcondition: @Return is a String containing the url of the github repo.
-    """
-    return data["GithubRepo"]
+    def getPackageCategories(self):
+        """
+        Returns a list of categories which packages are sorted by
+        @precondition: Packages.json has a Categories key
+        @postcondition: @return is a List of Strings of categories which
+                        packages are sorted by.
+        """
+        return self._data["Categories"]
+
+
+    def getPackageName(self, category):
+        """
+        Get all package names from url
+        
+        @param category: a String representing the category of a set of packages
+        @precondition: data["Packages"] has category as a key
+        @postcondition: @return is a List of Strings containing package names which
+                        are associated with Type.
+        """
+        Packages = []
+    
+        for packageName in self._data["Packages"][category]:
+            Packages.append(packageName)
+        return Packages
+    
+    
+    def getPackageBashCommands(self, category, packageName):
+        """
+        Get bashCommands of Package from url
+        
+        @param category: a String representing the category of a set of packages
+        @param packageName: a String representing the name of a package
+        @precondition: data["Packages"] has category as a key and 
+                        data["Packages"][category] has packageName as a key
+        @postcondition: @return is a List of Strings of bash commands which
+                        need to be run after a package is installed.
+        """
+        return self._data["Packages"][category][packageName]["PackageBashCommands"]
+    
+    
+    def getVersion(self):
+        """
+        get version from url
+        
+        @precondition: data has a "Version" key
+        @postcondition: @Return is a String containing the program version 
+                        information
+        """
+        return self._data["Version"]
+    
+    
+    def getGithubRepo(self):
+        """
+        get GithubRepo from url
+        
+        @precondition: data has a "GithubRepo" key
+        @postcondition: @Return is a String containing the url of the github repo.
+        """
+        return self._data["GithubRepo"]

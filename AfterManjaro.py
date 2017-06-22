@@ -3,6 +3,7 @@ from PyQt5.QtCore import QDateTime, pyqtSignal
 from PyQt5.QtWidgets import QMainWindow, QApplication,QMessageBox
 import BashCommands, indexnew, JsonParse, Update, sys, installation, os
 import webbrowser
+from urllib.error import URLError
 
 class Application():
     """
@@ -39,8 +40,17 @@ class Application():
         @postcondition: _packages contains a list of packages keyed by category 
         """
         self._packages = {}
-        for category in ["Developer", "Tools", "Personal", "System"]:
-            self._packages[category] = JsonParse.getPackageName(category)
+        
+        try:
+            self._jsonParse = JsonParse.JsonParse()
+        except URLError:
+            self.showError("Error Downloading Package List", 
+                           "There was an error loading the package list. " + 
+                            "Please check your internet connection")
+            #FIXME: Need to disable or exit the program here
+        
+        for category in self._jsonParse.getPackageCategories():
+            self._packages[category] = self._jsonParse.getPackageName(category)
             
     def _addPackagesToUi(self):
         """
@@ -147,6 +157,22 @@ class Application():
         """
         webbrowser.open('http://www.github.com/hsmnzaydn/afterfrommanjaro', 
                         new=2)
+        
+    def showError(self, title, errorMessage):
+        """
+        Opens a window which displays an error message if an error occurs.
+        @param title: A String which will be the window title for the error 
+                message
+        @param errorMessage: A String which is the error message to display.
+        @postcondition: A QMessageBox() appears displaying errorMessage as a 
+                        message.
+        """
+        errorBox = QMessageBox()
+        errorBox.setIcon(QMessageBox.Critical)
+        errorBox.setText(errorMessage)
+        errorBox.setWindowTitle(title)
+        errorBox.setStandardButtons(QMessageBox.Ok)
+        errorBox.exec_()
         
 
 if __name__ == '__main__':

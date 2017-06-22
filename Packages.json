@@ -4,491 +4,438 @@
 
 "Packages": {
 
-	"Developer":[
-	{
-	 "ProgramName":"Anaconda",
+	"Developer":{
+	"Anaconda": {
 	 "PackageName": "anaconda",
 	 "AUR": true,
 	 "PackageBashCommands":[]
 	},
-	{
-	 "ProgramName":"Android Studio",
+	
+	"Android Studio": {
 	 "PackageName": "android-studio",
 	 "AUR": true,
 	 "PackageBashCommands":["cd ~/$ANDROID_HOME/Android/Sdk/emulator/lib64/libstdc++",
 	 						"mv libstdc++.so.6 libstdc++.so.6.bak","cd .."]
 	},
-	{
-	 "ProgramName":"Arduino Ide",
+	
+	"Arduino Ide": {
 	 "PackageName": "arduino",
 	 "AUR": false,
 	 "PackageBashCommands":[]
-	}
-	,
-	{
-	 "ProgramName":"Atom Text Editor",
+	},
+	
+	"Atom Text Editor": {
 	 "PackageName": "atom",
 	 "AUR": false,
 	 "PackageBashCommands":[]
 	}
 	 ,
-	{
-	 "ProgramName":"Docker",
+	
+	"Docker": {
 	 "PackageName": "docker",
 	 "AUR": false,
 	 "PackageBashCommands":[]
-	}
-	,
+	},
 	
-	{
-	 "ProgramName":"Eclipse (Java)",
+	"Eclipse (Java)": {
 	 "PackageName": "eclipse-java",
 	 "AUR": false,
 	 "PackageBashCommands":[]
 	},
 	
-	{
-	  "ProgramName": "Eclipse (C++)",
+	"Eclipse (C++)": {
 	  "PackageName": "eclipse-cpp",
 	  "AUR": false,
 	  "PackageBashCommands":[]
 	},
 	
-	{
-	  "ProgramName": "Eclipse (PHP)",
+	"Eclipse (PHP)": {
 	  "PackageName": "eclipse-php",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "Eclipse (Python)",
+	"Eclipse (Python)": {
 	  "PackageName": "eclipse-pydev",
 	  "AUR": true,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Gcc",
+	"Gcc": {
 	 "PackageName": "gcc",
 	 "AUR": false,
 	 "PackageBashCommands": []
-	}
-	,
-	 {
-	 "ProgramName":"Geany",
+	},
+	 
+	 "Geany": {
 	 "PackageName": "geany",
 	 "AUR": false,
 	 "PackageBashCommands": []
-	}
-	,
-	{
-	 "ProgramName":"Git",
+	},
+	
+	"Git": {
 	 "PackageName": "git",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	 },
-	 {
-	 "ProgramName":"Gitlab",
+	 
+	"Gitlab": {
 	 "PackageName": "gitlab",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	 },
-	 {
-	 "ProgramName":"Intellij Idea",
+	 
+	"Intellij Idea": {
 	 "PackageName": "intellij-idea-community-edition",
 	 "AUR": false,
 	 "PackageBashCommands": []
-	}
-	,
-	 {
-	 "ProgramName":"Mono Develop",
+	},
+	 
+	"Mono Develop": {
 	 "PackageName": "monodevelop",
 	 "AUR": false,
 	 "PackageBashCommands": []
-	}
-	,
-	 {
-	 "ProgramName":"NetBeans",
+	},
+	 
+	"NetBeans": {
 	 "PackageName": "netbeans",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	 {
-	 "ProgramName":"NPM",
+	 
+	"NPM": {
 	 "PackageName": "npm",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	 {
-	 "ProgramName":"PhpStorm",
+	 
+	"PhpStorm": {
 	 "PackageName": "phpstorm",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	 {
-	 "ProgramName":"PyCharm (Community)",
+	 
+	"PyCharm (Community)": {
 	 "PackageName": "pycharm-community",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	 {
-	 "ProgramName":"PyCharm (Professional)",
+	 
+	"PyCharm (Professional)": {
 	 "PackageName": "pycharm-professional",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Sublime Text",
+	
+	"Sublime Text": {
 	 "PackageName": "sublime-text",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Vim",
+	
+	"Vim": {
 	 "PackageName": "vim",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Visual Studio Code",
+	
+	"Visual Studio Code": {
 	 "PackageName": "visual-studio-code",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	}
 	
-	],
+	},
 	
 	
-	"Tools":[
-	{
-	  "ProgramName": "Adobe Flash Player",
+	"Tools":{
+	"Adobe Flash Player": {
 	  "PackageName": "flashplugin",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"BleachBit",
+	"BleachBit": {
 	 "PackageName": "bleachbit",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Blender",
+	
+	"Blender": {
 	 "PackageName": "blender",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Chrome",
+	
+	"Chrome": {
 	 "PackageName": "google-chrome",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "Chromium",
+	 "Chromium": {
 	  "PackageName": "chromium",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Conky",
+	"Conky": {
 	 "PackageName": "conky",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "Conky Manager",
+	"Conky Manager": {
 	  "PackageName": "conky-manager",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Dropbox",
+	"Dropbox": {
 	 "PackageName": "dropbox",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	 
-	{
-	 "ProgramName":"Filezilla",
+	"Filezilla": {
 	 "PackageName": "filezilla",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	 
-	{
-	 "ProgramName":"FoxitReader",
+	"FoxitReader": {
 	 "PackageName": "foxitreader",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	 
-	{
-	 "ProgramName":"ImageMagick",
+	"ImageMagick": {
 	 "PackageName": "imagemagick",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	 
-	{
-	 "ProgramName":"KdeConnect",
+	"Kde Connect": {
 	 "PackageName": "kdeconnect",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Krita",
+	"Krita": {
 	 "PackageName": "krita",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"MegaSync",
+	"MegaSync": {
 	 "PackageName": "megasync",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"MintStick",
+	"MintStick": {
 	 "PackageName": "mintstick-git",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"NylasMail",
+	"NylasMail": {
 	 "PackageName": "nylas-mail-bin",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Opera",
+	"Opera": {
 	 "PackageName": "opera",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Pepper Flash",
+	"Pepper Flash": {
 	 "PackageName": "pepper-flash",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Plank",
+	"Plank": {
 	 "PackageName": "plank",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"PlayOnLinux",
+	
+	"PlayOnLinux": {
 	 "PackageName": "playonlinux",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"RedShift",
+	"RedShift": {
 	 "PackageName": "redshift",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "RedShift (KDE)",
+	"RedShift (KDE)": {
 	  "PackageName": "plasma5-applets-redshift-control",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Skype",
+	"Skype": {
 	 "PackageName": "skype",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"TeamViewer",
+	"TeamViewer": {
 	 "PackageName": "teamviewer",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	 {
-	 "ProgramName":"Telegram Desktop",
+	 
+	"Telegram Desktop": {
 	 "PackageName": "telegram-desktop",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Terminator",
+	
+	"Terminator": {
 	 "PackageName": "terminator",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Ulauncher",
+	
+	"Ulauncher": {
 	 "PackageName": "ulauncher",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"VirtualBox",
+	"VirtualBox": {
 	 "PackageName": "virtualbox",
 	 "AUR": false,
 	 "PackageBashCommands":[]
 	},
 	
-	{
-	 "ProgramName":"VLC",
+	"VLC": {
 	 "PackageName": "vlc",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"VokoScreen",
+	"VokoScreen": {
 	 "PackageName": "vokoscreen",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
-	{
-	 "ProgramName":"Whatsapp Desktop",
+	
+	"Whatsapp Desktop": {
 	 "PackageName": "whatsapp-desktop",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Wine",
+	"Wine": {
 	 "PackageName": "wine",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"WinUsb",
+	"WinUsb": {
 	 "PackageName": "winusb",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"WPS Office",
+	"WPS Office": {
 	 "PackageName": "wps-office",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Xtreme Download Manager",
+	"Xtreme Download Manager": {
 	 "PackageName": "xdman",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	}
-	],
+	},
 	
-	"Personal":[
-	{
-	 "ProgramName":"Compiz",
+	"Personal":{
+	"Compiz": {
 	 "PackageName": "compiz",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "Compiz (Manjaro)",
+	"Compiz (Manjaro)": {
 	  "PackageName": "compiz-manjaro",
 	  "AUR": false,
 	  "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Flatter Icons",
+	"Flatter Icons": {
 	 "PackageName": "flattr-icon-theme",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	  "ProgramName": "Numix Circle Theme",
+	"Numix Circle Theme": {
 	  "PackageName": "numix-circle-icon-theme-git",
 	  "AUR": true,
 	  "PackageBashCommands": []
 	 },
 	 
-	 {
-	 "ProgramName":"Numix GTK Theme",
+	 "Numix GTK Theme": {
 	 "PackageName": "numix-gtk-theme",
 	 "AUR": false,
 	 "PackageBashCommands": []
 	},
 	 
-	{
-	 "ProgramName":"Numix Square Icons",
+	"Numix Square Icons": {
 	 "PackageName": "numix-square-icon-theme-git",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Paper Icons",
+	"Paper Icons": {
 	 "PackageName": "paper-icon-theme",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	},
 	
-	{
-	 "ProgramName":"Popcorn Time",
+	"Popcorn Time": {
 	 "PackageName": "popcorntime",
 	 "AUR": true,
 	 "PackageBashCommands": []
-	}
-	,
-	{
-	 "ProgramName":"Spotify",
+	},
+	
+	"Spotify": {
 	 "PackageName": "spotify",
 	 "AUR": true,
 	 "PackageBashCommands": []
 	}
+	},
 	
+	"System":{
 	
-	],
-	
-	"System":[
-	{
-	 "ProgramName":"Update Grub",
+	"Update Grub": {
 	 "PackageName": null,
 	 "AUR": null,
 	 "PackageBashCommands": ["sudo update-grub"]
 	},
 	
-	{
-	 "ProgramName":"Preload",
+	"Preload": {
 	 "PackageName": "preload",
 	 "AUR": false,
 	 "PackageBashCommands":["sudo systemctl enable preload.service --noconfirm"]
 	},
 	
-	{
-	 "ProgramName":"SSD Trim",
+	"SSD Trim": {
 	 "PackageName": null,
 	 "AUR": null,
 	 "PackageBashCommands": ["sudo systemctl enable fstrim.timer --noconfirm"]
 	}
-	]
+	}
 },
 
 "Version":"2.0.1",
