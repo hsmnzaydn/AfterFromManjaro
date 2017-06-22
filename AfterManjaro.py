@@ -81,11 +81,14 @@ class Application():
                         a selected program in the GUI list views.
         """
         selectedItems = {}
-        selectedItems["Developer"] = (
-            self._ui.Developer_listWidget.selectedItems())
-        selectedItems["Tools"] = self._ui.Tools_listWidget.selectedItems()
-        selectedItems["Personal"] = self._ui.Personal_listWidget.selectedItems()
-        selectedItems["System"] = self._ui.System_listWidget.selectedItems()
+        selectedItems["Developer"] = [item.text() for item in 
+                                self._ui.Developer_listWidget.selectedItems()]
+        selectedItems["Tools"] = [item.text() for item in 
+                                self._ui.Tools_listWidget.selectedItems()]
+        selectedItems["Personal"] = [item.text() for item in 
+                                self._ui.Personal_listWidget.selectedItems()]
+        selectedItems["System"] = [item.text() for item in 
+                                self._ui.System_listWidget.selectedItems()]
         return selectedItems
     
     def _getPackagesToInstall(self, selectedItems):
