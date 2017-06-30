@@ -4,7 +4,7 @@ import BashCommands
 #get data from url
 with urllib.request.urlopen("https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/master/Packages.json") as url:
     data = json.loads(url.read().decode())
-
+#
 #get all packagename from url
 def getPackageName(Type):
     Packages=[]
