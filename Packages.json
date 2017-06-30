@@ -8,7 +8,7 @@
 	"Anaconda": {
 	 "PackageName": "anaconda",
 	 "AUR": true,
-	 "PackageBashCommands":[yaourt -S anaconda --noconfirm]
+	 "PackageBashCommands":["yaourt -S anaconda --noconfirm"]
 	},
 	
 	"Android Studio": {
