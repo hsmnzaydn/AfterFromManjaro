@@ -1,7 +1,5 @@
 Automatically download and load your selected packages and programs
 <br />
-
-<img src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-0/s480x480/18765674_906274342853162_816537370016055792_n.jpg?oh=e634c291f7557c37513dac17dfd79a70&oe=59DF32A6"/>
 <h1>Usage</h1>
 <br />
 Double click to AfterManjaro.desktop
@@ -11,15 +9,6 @@ or
 Open the terminal in directory and type "python AfterManjaro.py".
 
 <br />
-
-<h2>Dependencies</h2>
-<br />
-Python 3
-<br />
-PyQt5
-<br />
-yaourt
-
 <h2>Index</h2>
 <br />
 Android Studio(AUR)
@@ -115,21 +104,3 @@ SSD Trim(AUR)
 Preload(AUR)
 <br />
 Compiz(AUR)
-<br />
-Popcorn Time(AUR)
-<br />
-Telegram Desktop(AUR)
-<br />
-Xtreme Dowload Manager(AUR)
-<br />
-Numix GTK Theme(AUR)
-<br />
-Gitlab(AUR)
-<br />
-NPM (AUR)
-<br />
-Blender (AUR)
-<br />
-KdeConnect(AUR)
-<br />
-Gcc(AUR)
