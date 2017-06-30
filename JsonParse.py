@@ -1,68 +1,40 @@
-import urllib.request
-import json
+import urllib.request, json
 import BashCommands
 
-# Download the package list from github
+#get data from url
 with urllib.request.urlopen("https://raw.githubusercontent.com/hsmnzaydn/AfterFromManjaro/master/Packages.json") as url:
     data = json.loads(url.read().decode())
 
-
+#get all packagename from url
 def getPackageName(Type):
-    """
-    Get all package names from url
-    
-    @param Type: a String representing the category of a set of packages
-    @precondition: data has Type as a key
-    @postcondition: @return is a list of Strings containing package names which
-                    are associated with Type.
-    """
-    Packages = []
+    Packages=[]
 
     for row in data[Type]:
         Packages.append(row["PackageName"])
     return Packages
-
-
-def getPackageBashCommands(Type, PackageName):
-    """
-    Get bashCommands of Package from url
-    
-    @param Type: a String representing the category of a set of packages
-    @param PackageName: a String representing the name of a package
-    @precondition: data has Type as a key and data[Type] has a dictionary 
-                    containing PackageName as a value for the "PackageName" key
-    @postcondition: The bash
-    """
+#get choosed bashCommands of Package from url
+def getPackageBashCommands(Type,PackageName):
     for row in data[Type]:
-        command = ""
-        if row["PackageName"] == PackageName:
-            for packageCommand in row["PackageBashCommands"]:
-                if len(packageCommand) == 1:
-                    command = command + "" + packageCommand
+        Com = ""
+        if row["PackageName"]==PackageName:
+            for Command in row["PackageBashCommands"]:
+                if len(Command)==1:
+                    Com = Com + "" + Command
                 else:
-                    command = command + "\n" + packageCommand
-            if len(packageCommand) == 1:
-                BashCommands.RunSingleCommand(command)
+                    Com = Com + "\n" + Command
+            if len(Command) == 1:
+               BashCommands.EchoSingle(Com)
+               BashCommands.RunSh("./install.sh")
             else:
-                BashCommands.EchoMulti(command)
-
-
+                BashCommands.EchoMulti(Com)
+#get version from url
 def getVersion():
-    """
-    get version from url
-    
-    @precondition: data has a "Version" key
-    @postcondition: @Return is a String containing the program version 
-                    information
-    """
     return data["Version"]
-
-
+#get GithubRepo from url
 def getGithubRepo():
-    """
-    get GithubRepo from url
-    
-    @precondition: data has a "GithubRepo" key
-    @postcondition: @Return is a String containing the url of the github repo.
-    """
     return data["GithubRepo"]
+
+
+
+
+

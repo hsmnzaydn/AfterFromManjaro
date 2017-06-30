@@ -17,19 +17,11 @@
  "PackageName":"Atom Text Editor",
  "PackageBashCommands":"yaourt -S atom --noconfirm"
 }
- ,
-{
- "PackageName":"Docker",
- "PackageBashCommands":"yaourt -S docker --noconfirm"
-}
 ,
 
 {
  "PackageName":"Eclipse",
  "PackageBashCommands":"yaourt -S eclipse --noconfirm"
-}, {
- "PackageName":"Gcc",
- "PackageBashCommands":"yaourt -S gcc --noconfirm"
 }
 ,
  {
@@ -40,10 +32,6 @@
 {
  "PackageName":"Git",
  "PackageBashCommands":"sudo pacman -S git --noconfirm"
- },
- {
- "PackageName":"Gitlab",
- "PackageBashCommands":"sudo pacman -S gitlab --noconfirm"
  },
  {
  "PackageName":"intellij Idea",
@@ -60,20 +48,12 @@
  "PackageBashCommands":"yaourt -S netbeans --noconfirm"
 },
  {
- "PackageName":"NPM",
- "PackageBashCommands":"yaourt -S npm --noconfirm"
-},
- {
  "PackageName":"PhpStorm",
  "PackageBashCommands":"yaourt -S phpstorm --noconfirm"
 },
  {
- "PackageName":"PyCharm(Community)",
- "PackageBashCommands":"yaourt -S pycharm-community --noconfirm"
-},
- {
- "PackageName":"PyCharm(Professional )",
- "PackageBashCommands":"yaourt -S pycharm-professional --noconfirm"
+ "PackageName":"PyCharm",
+ "PackageBashCommands":"yaourt -S pycharm --noconfirm"
 },
 {
  "PackageName":"Sublime Text",
@@ -94,11 +74,7 @@
 "Tools":[
 {
  "PackageName":"BleachBit",
- "PackageBashCommands": "sudo pacman -S bleachbit --noconfirm"
-},
- {
- "PackageName":"Blender",
- "PackageBashCommands":"sudo pacman -S blender --noconfirm"
+ "PackageBashCommands":"sudo pacman -S bleachbit --noconfirm"
 },
 {
  "PackageName":"Chrome",
@@ -120,19 +96,10 @@
  "PackageName":"FoxitReader",
  "PackageBashCommands":"yaourt -S foxitreader --noconfirm"
 },
- {
- "PackageName":"ImageMagick",
- "PackageBashCommands":"yaourt -S imagemagick --noconfirm"
-},
- {
- "PackageName":"KdeConnect",
- "PackageBashCommands":"yaourt -S kdeconnect --noconfirm"
-},
 {
  "PackageName":"Krita",
  "PackageBashCommands":"yaourt -S krita --noconfirm"
 },
-
 {
  "PackageName":"MegaSync",
  "PackageBashCommands":"yaourt -S megasync --noconfirm"
@@ -167,15 +134,11 @@
 },
 {
  "PackageName":"Skype",
- "PackageBashCommands":"yaourt -S skype --noconfirm"
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/skypeforlinux.tar.gz","tar -xvzf skypeforlinux.tar.gz","cd skypeforlinux","makepkg -s","sudo pacman -U skypeforlinux-5.1.0.1-1-x86_64.pkg.tar.xz","cd .."]
 },
 {
  "PackageName":"TeamViewer",
  "PackageBashCommands":"yaourt -S teamviewer --noconfirm"
-},
- {
- "PackageName":"Telegram Desktop",
- "PackageBashCommands":"yaourt -S telegram-desktop --noconfirm"
 },
 {
  "PackageName":"Terminator",
@@ -187,7 +150,7 @@
 },
 {
  "PackageName":"VirtualBox",
- "PackageBashCommands":["yaourt -S virtualbox","teamviewer --daemon start"]
+ "PackageBashCommands":"yaourt -S virtualbox"
 },
  {
  "PackageName":"VLC",
@@ -208,14 +171,6 @@
 {
  "PackageName":"WinUsb",
  "PackageBashCommands":"yaourt -S winusb --noconfirm"
-},
-{
- "PackageName":"WPS Office",
- "PackageBashCommands":"yaourt -S wps-office --noconfirm"
-},
-{
- "PackageName":"Xtreme Download Manager",
- "PackageBashCommands":"yaourt -S xdman --noconfirm"
 }
 ],
 
@@ -229,12 +184,8 @@
  "PackageBashCommands":"yaourt -S flattr-icon-theme --noconfirm"
 },
  {
-  "PackageName": "Numix Circle Theme",
-  "PackageBashCommands":"yaourt -S numix-circle-icon-theme-git --noconfirm"
- },
- {
- "PackageName":"Numix GTK Theme",
- "PackageBashCommands":"yaourt -S numix-gtk-theme --noconfirm "
+ "PackageName":"Numix Circle Theme",
+ "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/numix-circle-icon-theme-git.tar.gz","tar -xvzf numix-circle-icon-theme-git.tar.gz","cd numix-circle-icon-theme-git","makepkg -s ","sudo pacman -U numix-circle-icon-theme-git-0.r16.5a11140-1-any.pkg.tar.xz","cd .."]
 },
  {
  "PackageName":"Numix Square Icons",
@@ -245,11 +196,6 @@
  "PackageName":"Paper Icons",
  "PackageBashCommands":"yaourt -S paper-icon-theme-git --noconfirm"
 },
-{
- "PackageName":"Popcorn Time",
- "PackageBashCommands": "yaourt -S popcorntime --noconfirm"
-}
-,
 {
  "PackageName":"Spotify",
  "PackageBashCommands":["sudo -Rsnc spotify --noconfirm","sudo -Syyuu --noconfirm","sudo pacman -Scc --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify --noconfirm"]
@@ -276,8 +222,8 @@
 
 ],
 
-"Version":"2.0.1",
-"GithubRepo":"http://www.github.com/hsmnzaydn/AfterFromManjaro"
+"Version":"2.0.0",
+"GithubRepo":"http://www.github.com/hsmnzaydn/AfterManjaro"
 
 
 
