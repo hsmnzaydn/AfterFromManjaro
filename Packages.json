@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 "Developer":[
 {
  "PackageName":"Anaconda",
@@ -244,53 +245,448 @@
  "PackageName":"Numix Square Icons",
  "PackageBashCommands":"yaourt -S numix-square-icon-theme-git --noconfirm"
 },
+=======
+>>>>>>> redoInstallation
 
-{
- "PackageName":"Paper Icons",
- "PackageBashCommands":"yaourt -S paper-icon-theme-git --noconfirm"
+"Categories": ["Developer", "Tools", "Personal", "System"],
+
+"Packages": {
+
+	"Developer":{
+	"Anaconda": {
+	 "PackageName": "anaconda",
+	 "AUR": true,
+	 "PackageBashCommands":[]
+	},
+	
+	"Android Studio": {
+	 "PackageName": "android-studio",
+	 "AUR": true,
+	 "PackageBashCommands":["cd ~/$ANDROID_HOME/Android/Sdk/emulator/lib64/libstdc++",
+	 						"mv libstdc++.so.6 libstdc++.so.6.bak","cd .."]
+	},
+	
+	"Arduino Ide": {
+	 "PackageName": "arduino",
+	 "AUR": false,
+	 "PackageBashCommands":[]
+	},
+	
+	"Atom Text Editor": {
+	 "PackageName": "atom",
+	 "AUR": false,
+	 "PackageBashCommands":[]
+	}
+	 ,
+	
+	"Docker": {
+	 "PackageName": "docker",
+	 "AUR": false,
+	 "PackageBashCommands":[]
+	},
+	
+	"Eclipse (Java)": {
+	 "PackageName": "eclipse-java",
+	 "AUR": false,
+	 "PackageBashCommands":[]
+	},
+	
+	"Eclipse (C++)": {
+	  "PackageName": "eclipse-cpp",
+	  "AUR": false,
+	  "PackageBashCommands":[]
+	},
+	
+	"Eclipse (PHP)": {
+	  "PackageName": "eclipse-php",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"Eclipse (Python)": {
+	  "PackageName": "eclipse-pydev",
+	  "AUR": true,
+	  "PackageBashCommands": []
+	},
+	
+	"Gcc": {
+	 "PackageName": "gcc",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	 "Geany": {
+	 "PackageName": "geany",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Git": {
+	 "PackageName": "git",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	 },
+	 
+	"Gitlab": {
+	 "PackageName": "gitlab",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	 },
+	 
+	"Intellij Idea": {
+	 "PackageName": "intellij-idea-community-edition",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"Mono Develop": {
+	 "PackageName": "monodevelop",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"NetBeans": {
+	 "PackageName": "netbeans",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"NPM": {
+	 "PackageName": "npm",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"PhpStorm": {
+	 "PackageName": "phpstorm",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	 
+	"PyCharm (Community)": {
+	 "PackageName": "pycharm-community",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	 
+	"PyCharm (Professional)": {
+	 "PackageName": "pycharm-professional",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Sublime Text": {
+	 "PackageName": "sublime-text",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Vim": {
+	 "PackageName": "vim",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Visual Studio Code": {
+	 "PackageName": "visual-studio-code",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	}
+	
+	},
+	
+	
+	"Tools":{
+	"Adobe Flash Player": {
+	  "PackageName": "flashplugin",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"BleachBit": {
+	 "PackageName": "bleachbit",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Blender": {
+	 "PackageName": "blender",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Chrome": {
+	 "PackageName": "google-chrome",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	 "Chromium": {
+	  "PackageName": "chromium",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"Conky": {
+	 "PackageName": "conky",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Conky Manager": {
+	  "PackageName": "conky-manager",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"Dropbox": {
+	 "PackageName": "dropbox",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"Filezilla": {
+	 "PackageName": "filezilla",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"FoxitReader": {
+	 "PackageName": "foxitreader",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	 
+	"ImageMagick": {
+	 "PackageName": "imagemagick",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"Kde Connect": {
+	 "PackageName": "kdeconnect",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Krita": {
+	 "PackageName": "krita",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"MegaSync": {
+	 "PackageName": "megasync",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"MintStick": {
+	 "PackageName": "mintstick-git",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"NylasMail": {
+	 "PackageName": "nylas-mail-bin",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Opera": {
+	 "PackageName": "opera",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Pepper Flash": {
+	 "PackageName": "pepper-flash",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Plank": {
+	 "PackageName": "plank",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"PlayOnLinux": {
+	 "PackageName": "playonlinux",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"RedShift": {
+	 "PackageName": "redshift",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"RedShift (KDE)": {
+	  "PackageName": "plasma5-applets-redshift-control",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"Skype": {
+	 "PackageName": "skype",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"TeamViewer": {
+	 "PackageName": "teamviewer",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	 
+	"Telegram Desktop": {
+	 "PackageName": "telegram-desktop",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Terminator": {
+	 "PackageName": "terminator",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Ulauncher": {
+	 "PackageName": "ulauncher",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"VirtualBox": {
+	 "PackageName": "virtualbox",
+	 "AUR": false,
+	 "PackageBashCommands":[]
+	},
+	
+	"VLC": {
+	 "PackageName": "vlc",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"VokoScreen": {
+	 "PackageName": "vokoscreen",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Whatsapp Desktop": {
+	 "PackageName": "whatsapp-desktop",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Wine": {
+	 "PackageName": "wine",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"WinUsb": {
+	 "PackageName": "winusb",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"WPS Office": {
+	 "PackageName": "wps-office",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Xtreme Download Manager": {
+	 "PackageName": "xdman",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	}
+	},
+	
+	"Personal":{
+	"Compiz": {
+	 "PackageName": "compiz",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Compiz (Manjaro)": {
+	  "PackageName": "compiz-manjaro",
+	  "AUR": false,
+	  "PackageBashCommands": []
+	},
+	
+	"Flatter Icons": {
+	 "PackageName": "flattr-icon-theme",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	
+	"Numix Circle Theme": {
+	  "PackageName": "numix-circle-icon-theme-git",
+	  "AUR": true,
+	  "PackageBashCommands": []
+	 },
+	 
+	 "Numix GTK Theme": {
+	 "PackageName": "numix-gtk-theme",
+	 "AUR": false,
+	 "PackageBashCommands": []
+	},
+	 
+	"Numix Square Icons": {
+	 "PackageName": "numix-square-icon-theme-git",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Paper Icons": {
+	 "PackageName": "paper-icon-theme",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Popcorn Time": {
+	 "PackageName": "popcorntime",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	},
+	
+	"Spotify": {
+	 "PackageName": "spotify",
+	 "AUR": true,
+	 "PackageBashCommands": []
+	}
+	},
+	
+	"System":{
+	
+	"Update Grub": {
+	 "PackageName": null,
+	 "AUR": null,
+	 "PackageBashCommands": ["sudo update-grub"]
+	},
+	
+	"Preload": {
+	 "PackageName": "preload",
+	 "AUR": false,
+	 "PackageBashCommands":["sudo systemctl enable preload.service --noconfirm"]
+	},
+	
+	"SSD Trim": {
+	 "PackageName": null,
+	 "AUR": null,
+	 "PackageBashCommands": ["sudo systemctl enable fstrim.timer --noconfirm"]
+	}
+	}
 },
-{
- "PackageName":"Popcorn Time",
- "PackageBashCommands": "yaourt -S popcorntime --noconfirm"
-}
-,
-{
- "PackageName":"Spotify",
- "PackageBashCommands":["sudo -Rsnc spotify --noconfirm","sudo -Syyuu --noconfirm","sudo pacman -Scc --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libopenssl-1.0-compat --noconfirm","yaourt -S --m-arg --skippgpcheck --noconfirm libcurl-openssl-1.0","yaourt -S spotify --noconfirm"]
-}
-
-
-],
-
-"System":[
-{
- "PackageName":"Update Grub",
- "PackageBashCommands":"sudo update-grub"
-},
-
-{
- "PackageName":"Preload",
- "PackageBashCommands":["sudo pacman -S preload","sudo systemctl enable preload.service --noconfirm"]
-},
-{
- "PackageName":"SSD Trim",
- "PackageBashCommands":"sudo systemctl enable fstrim.timer --noconfirm"
-}
-
-
-],
 
 "Version":"2.0.1",
 "GithubRepo":"http://www.github.com/hsmnzaydn/AfterFromManjaro"
-
-
-
-
-
-
-
-
-
-
 
 }
