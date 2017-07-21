@@ -15,6 +15,8 @@ Android Studio(AUR)
 <br />
 PyCharm(AUR)
 <br />
+PyCharm(Professional)(AUR)
+<br />
 Anaconda(AUR)
 <br />
 Sublime Text(AUR)
@@ -38,6 +40,8 @@ Ardiuno Ide(AUR)
 Mono Develop(AUR)
 <br />
 Intellij IDEA(AUR)
+<br />
+Intellij IDEA(Ultimate)(AUR)
 <br />
 Visual Studio Code(AUR)
 <br />
@@ -104,3 +108,9 @@ SSD Trim(AUR)
 Preload(AUR)
 <br />
 Compiz(AUR)
+<br />
+Tilix(AUR)
+<br />
+GCC
+<br />
+Webstorm

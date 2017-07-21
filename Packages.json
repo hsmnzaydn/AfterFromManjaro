@@ -22,6 +22,10 @@
 {
  "PackageName":"Eclipse",
  "PackageBashCommands":"yaourt -S eclipse --noconfirm"
+},
+ {
+ "PackageName":"GCC",
+ "PackageBashCommands":"yaourt -S gcc --noconfirm"
 }
 ,
  {
@@ -39,6 +43,11 @@
 }
 ,
  {
+ "PackageName":"intellij Idea(Ultimate)",
+ "PackageBashCommands":"yaourt -S intellij-idea-ultimate-edition --noconfirm"
+}
+,
+ {
  "PackageName":"Mono Develop",
  "PackageBashCommands":"yaourt -S monodevelop --noconfirm"
 }
@@ -52,8 +61,12 @@
  "PackageBashCommands":"yaourt -S phpstorm --noconfirm"
 },
  {
- "PackageName":"PyCharm",
+ "PackageName":"PyCharm(Community)",
  "PackageBashCommands":"yaourt -S pycharm --noconfirm"
+},
+ {
+ "PackageName":"PyCharm(Professional)",
+ "PackageBashCommands":"yaourt -S pycharm-professional --noconfirm"
 },
 {
  "PackageName":"Sublime Text",
@@ -66,6 +79,10 @@
 {
  "PackageName":"Visual Studio Code",
  "PackageBashCommands":"yaourt -S visual-studio-code --noconfirm"
+},
+{
+ "PackageName":"Webstorm",
+ "PackageBashCommands":"yaourt -S webstorm --noconfirm"
 }
 
 ],
