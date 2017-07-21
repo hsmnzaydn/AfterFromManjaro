@@ -144,6 +144,10 @@
  "PackageName":"Terminator",
  "PackageBashCommands":"yaourt -S terminator --noconfirm"
 },
+ {
+ "PackageName":"Tilix",
+ "PackageBashCommands":"yaourt -S tilix --noconfirm"
+},
 {
  "PackageName":"Ulauncher",
  "PackageBashCommands":"yaourt -S ulauncher --noconfirm"
