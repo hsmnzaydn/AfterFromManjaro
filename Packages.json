@@ -6,7 +6,7 @@
 },
 {
  "PackageName":"Android Studio",
- "PackageBashCommands":["yaourt -S android-studio --noconfirm","cd ~/$ANDROID_HOME/Android/Sdk/emulator/lib64/libstdc++","mv libstdc++.so.6 libstdc++.so.6.bak","cd .."]
+ "PackageBashCommands":["yaourt -S android-studio --noconfirm"]
 },
 {
  "PackageName":"Ardiuno Ide",
@@ -151,7 +151,7 @@
 },
 {
  "PackageName":"Skype",
- "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/skypeforlinux.tar.gz","tar -xvzf skypeforlinux.tar.gz","cd skypeforlinux","makepkg -s","sudo pacman -U skypeforlinux-5.1.0.1-1-x86_64.pkg.tar.xz","cd .."]
+ "PackageBashCommands":["yaourt -S skype --noconfirm"]
 },
 {
  "PackageName":"TeamViewer",
@@ -206,7 +206,7 @@
 },
  {
  "PackageName":"Numix Circle Theme",
- "PackageBashCommands":["wget https://aur.archlinux.org/cgit/aur.git/snapshot/numix-circle-icon-theme-git.tar.gz","tar -xvzf numix-circle-icon-theme-git.tar.gz","cd numix-circle-icon-theme-git","makepkg -s ","sudo pacman -U numix-circle-icon-theme-git-0.r16.5a11140-1-any.pkg.tar.xz","cd .."]
+ "PackageBashCommands":["yaourt -S numix-circle-icon-theme-git --noconfirm"]
 },
  {
  "PackageName":"Numix Square Icons",
